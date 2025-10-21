@@ -1,0 +1,82 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Wed Oct 22 02:21:08 2025
+| Host         : YEO-SI-ZHAO-2003 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_Student_control_sets_placed.rpt
+| Design       : Top_Student
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    14 |
+| Unused register locations in slices containing registers |    20 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      4 |            1 |
+|      8 |            1 |
+|     10 |            1 |
+|     14 |            1 |
+|    16+ |           10 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              28 |            9 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             184 |           31 |
+| Yes          | No                    | No                     |             118 |           19 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             170 |           28 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------------------------------+-------------------------------------+------------------+----------------+
+|  Clock Signal  |              Enable Signal             |           Set/Reset Signal          | Slice Load Count | Bel Load Count |
++----------------+----------------------------------------+-------------------------------------+------------------+----------------+
+| ~clk6p25_BUFG  |                                        |                                     |                2 |              4 |
+|  clk_IBUF_BUFG |                                        | clkgen/div_cnt[3]_i_1_n_0           |                1 |              8 |
+|  clk_IBUF_BUFG | btn_det/fatigue_reg[0]                 | petStats/fatigue[7]_i_1_n_0         |                4 |             10 |
+|  clk_IBUF_BUFG | btn_det/fatigue_reg[0]                 |                                     |                6 |             14 |
+|  clk_IBUF_BUFG | btn_det/fatigue_reg[0]                 | petStats/hunger[7]_i_1_n_0          |                6 |             16 |
+|  clk_IBUF_BUFG |                                        |                                     |                7 |             24 |
+| ~clk6p25_BUFG  |                                        | u_display/frame_counter[16]_i_1_n_0 |                4 |             32 |
+| ~clk6p25_BUFG  | u_display/delay[0]_i_1_n_0             |                                     |                5 |             40 |
+|  clk_IBUF_BUFG | btn_det/btnC_active                    | btn_det/pulseC                      |                6 |             48 |
+|  clk_IBUF_BUFG | btn_det/btnL_active                    | btn_det/pulseL                      |                6 |             48 |
+|  clk_IBUF_BUFG | btn_det/btnR_active                    | btn_det/pulseR                      |                6 |             48 |
+|  clk_IBUF_BUFG |                                        | petStats/clear                      |                7 |             54 |
+| ~clk6p25_BUFG  | u_display/FSM_onehot_state[31]_i_1_n_0 |                                     |                8 |             64 |
+| ~clk6p25_BUFG  |                                        | u_display/spi_word[39]_i_1_n_0      |               19 |             90 |
++----------------+----------------------------------------+-------------------------------------+------------------+----------------+
+
+
