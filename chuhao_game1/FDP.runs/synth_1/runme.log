@@ -1,0 +1,653 @@
+
+*** Running vivado
+    with args -log Top_Student.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Student.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Top_Student.tcl -notrace
+Command: synth_design -top Top_Student -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 32316 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 356.922 ; gain = 99.789
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top_Student' [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/sources_1/new/Top_Student.v:11]
+INFO: [Synth 8-6157] synthesizing module 'ClockDivider' [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/sources_1/new/ClockDivider.v:1]
+	Parameter DIV bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ClockDivider' (1#1) [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/sources_1/new/ClockDivider.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mode_fsm' [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/sources_1/new/mode_fsm.v:3]
+	Parameter IDLE bound to: 2'b00 
+	Parameter FEED bound to: 2'b01 
+	Parameter PLAY bound to: 2'b10 
+	Parameter SLEEP bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'mode_fsm' (2#1) [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/sources_1/new/mode_fsm.v:3]
+INFO: [Synth 8-6157] synthesizing module 'collect_logic' [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/sources_1/new/collect_logic.v:2]
+	Parameter W bound to: 96 - type: integer 
+	Parameter H bound to: 64 - type: integer 
+	Parameter P_SIZE bound to: 10 - type: integer 
+	Parameter C_SIZE bound to: 6 - type: integer 
+	Parameter STEP bound to: 2 - type: integer 
+	Parameter PX_MAX bound to: 86 - type: integer 
+	Parameter PY_MAX bound to: 54 - type: integer 
+	Parameter CX_MAX bound to: 90 - type: integer 
+	Parameter CY_MAX bound to: 58 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'collect_logic' (3#1) [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/sources_1/new/collect_logic.v:2]
+INFO: [Synth 8-6157] synthesizing module 'get_exp' [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/sources_1/new/get_exp.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'get_exp' (4#1) [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/sources_1/new/get_exp.v:23]
+INFO: [Synth 8-6157] synthesizing module 'collect_render' [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/sources_1/new/collect_render.v:3]
+	Parameter W bound to: 96 - type: integer 
+	Parameter H bound to: 64 - type: integer 
+	Parameter P_SIZE bound to: 10 - type: integer 
+	Parameter C_SIZE bound to: 6 - type: integer 
+	Parameter BLACK bound to: 16'b0000000000000000 
+	Parameter WHITE bound to: 16'b1111111111111111 
+	Parameter YEL bound to: 16'b1111111111100000 
+	Parameter RED bound to: 16'b1111100000000000 
+INFO: [Synth 8-6155] done synthesizing module 'collect_render' (5#1) [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/sources_1/new/collect_render.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/sources_1/imports/Desktop/Oled_Display.v:36]
+	Parameter Width bound to: 96 - type: integer 
+	Parameter Height bound to: 64 - type: integer 
+	Parameter PixelCount bound to: 6144 - type: integer 
+	Parameter PixelCountWidth bound to: 13 - type: integer 
+	Parameter ClkFreq bound to: 6250000 - type: integer 
+	Parameter FrameFreq bound to: 60 - type: integer 
+	Parameter FrameDiv bound to: 104166 - type: integer 
+	Parameter FrameDivWidth bound to: 17 - type: integer 
+	Parameter PowerDelay bound to: 20 - type: integer 
+	Parameter ResetDelay bound to: 3 - type: integer 
+	Parameter VccEnDelay bound to: 20 - type: integer 
+	Parameter StartupCompleteDelay bound to: 100 - type: integer 
+	Parameter MaxDelay bound to: 100 - type: integer 
+	Parameter MaxDelayCount bound to: 625000 - type: integer 
+	Parameter StateCount bound to: 32 - type: integer 
+	Parameter StateWidth bound to: 5 - type: integer 
+	Parameter PowerUp bound to: 5'b00000 
+	Parameter Reset bound to: 5'b00001 
+	Parameter ReleaseReset bound to: 5'b00011 
+	Parameter EnableDriver bound to: 5'b00010 
+	Parameter DisplayOff bound to: 5'b00110 
+	Parameter SetRemapDisplayFormat bound to: 5'b00111 
+	Parameter SetStartLine bound to: 5'b00101 
+	Parameter SetOffset bound to: 5'b00100 
+	Parameter SetNormalDisplay bound to: 5'b01100 
+	Parameter SetMultiplexRatio bound to: 5'b01101 
+	Parameter SetMasterConfiguration bound to: 5'b01111 
+	Parameter DisablePowerSave bound to: 5'b01110 
+	Parameter SetPhaseAdjust bound to: 5'b01010 
+	Parameter SetDisplayClock bound to: 5'b01011 
+	Parameter SetSecondPrechargeA bound to: 5'b01001 
+	Parameter SetSecondPrechargeB bound to: 5'b01000 
+	Parameter SetSecondPrechargeC bound to: 5'b11000 
+	Parameter SetPrechargeLevel bound to: 5'b11001 
+	Parameter SetVCOMH bound to: 5'b11011 
+	Parameter SetMasterCurrent bound to: 5'b11010 
+	Parameter SetContrastA bound to: 5'b11110 
+	Parameter SetContrastB bound to: 5'b11111 
+	Parameter SetContrastC bound to: 5'b11101 
+	Parameter DisableScrolling bound to: 5'b11100 
+	Parameter ClearScreen bound to: 5'b10100 
+	Parameter VccEn bound to: 5'b10101 
+	Parameter DisplayOn bound to: 5'b10111 
+	Parameter PrepareNextFrame bound to: 5'b10110 
+	Parameter SetColAddress bound to: 5'b10010 
+	Parameter SetRowAddress bound to: 5'b10011 
+	Parameter WaitNextFrame bound to: 5'b10001 
+	Parameter SendPixel bound to: 5'b10000 
+	Parameter SpiCommandMaxWidth bound to: 40 - type: integer 
+	Parameter SpiCommandBitCountWidth bound to: 6 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/sources_1/imports/Desktop/Oled_Display.v:123]
+INFO: [Synth 8-226] default block is never used [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/sources_1/imports/Desktop/Oled_Display.v:198]
+WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/sources_1/imports/Desktop/Oled_Display.v:346]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (6#1) [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/sources_1/imports/Desktop/Oled_Display.v:36]
+INFO: [Synth 8-6157] synthesizing module 'exp_display' [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/sources_1/new/exp_display.v:2]
+	Parameter WIDTH bound to: 96 - type: integer 
+	Parameter HEIGHT bound to: 64 - type: integer 
+	Parameter BLACK bound to: 16'b0000000000000000 
+	Parameter WHITE bound to: 16'b1111111111111111 
+INFO: [Synth 8-6155] done synthesizing module 'exp_display' (7#1) [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/sources_1/new/exp_display.v:2]
+INFO: [Synth 8-6157] synthesizing module 'sevenseg_game' [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/sources_1/new/sevenseg_game.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'sevenseg_game' (8#1) [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/sources_1/new/sevenseg_game.v:3]
+INFO: [Synth 8-6157] synthesizing module 'status_sevenseg_driver' [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/sources_1/new/status_sevenseg_driver.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'status_sevenseg_driver' (9#1) [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/sources_1/new/status_sevenseg_driver.v:3]
+INFO: [Synth 8-6157] synthesizing module 'sevenseg_mux' [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/sources_1/new/sevenseg_mux.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'sevenseg_mux' (10#1) [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/sources_1/new/sevenseg_mux.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (11#1) [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/sources_1/new/Top_Student.v:11]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port JB[2]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port JC[2]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[15]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[14]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[13]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[12]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[11]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[10]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[9]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[8]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[7]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[6]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[5]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[4]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[3]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 411.453 ; gain = 154.320
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 411.453 ; gain = 154.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 411.453 ; gain = 154.320
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/constrs_1/new/my_constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/constrs_1/new/my_constraints.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/constrs_1/new/my_constraints.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/constrs_1/new/my_constraints.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/constrs_1/new/my_constraints.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/constrs_1/new/my_constraints.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/constrs_1/new/my_constraints.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/constrs_1/new/my_constraints.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/constrs_1/new/my_constraints.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/constrs_1/new/my_constraints.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/constrs_1/new/my_constraints.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/constrs_1/new/my_constraints.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/constrs_1/new/my_constraints.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/constrs_1/new/my_constraints.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/constrs_1/new/my_constraints.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/constrs_1/new/my_constraints.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/constrs_1/new/my_constraints.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/constrs_1/new/my_constraints.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/constrs_1/new/my_constraints.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/constrs_1/new/my_constraints.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/constrs_1/new/my_constraints.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/constrs_1/new/my_constraints.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/constrs_1/new/my_constraints.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/constrs_1/new/my_constraints.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/constrs_1/new/my_constraints.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/constrs_1/new/my_constraints.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/constrs_1/new/my_constraints.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/constrs_1/new/my_constraints.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/constrs_1/new/my_constraints.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/constrs_1/new/my_constraints.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/constrs_1/new/my_constraints.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/constrs_1/new/my_constraints.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/constrs_1/new/my_constraints.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/constrs_1/new/my_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.srcs/constrs_1/new/my_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Student_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Student_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 747.289 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 747.289 ; gain = 490.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 747.289 ; gain = 490.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 747.289 ; gain = 490.156
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "slow_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "game_over" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Oled_Display'
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "fsm_next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 PowerUp | 00000000100000000000000000000000 |                            00000
+                   Reset | 00000000000100000000000000000000 |                            00001
+            ReleaseReset | 00000000000000000000100000000000 |                            00011
+            EnableDriver | 00000000000000000001000000000000 |                            00010
+              DisplayOff | 00000000000000000100000000000000 |                            00110
+   SetRemapDisplayFormat | 00000100000000000000000000000000 |                            00111
+            SetStartLine | 00001000000000000000000000000000 |                            00101
+               SetOffset | 10000000000000000000000000000000 |                            00100
+        SetNormalDisplay | 00000000000000000000000010000000 |                            01100
+       SetMultiplexRatio | 00000000000000000000000000100000 |                            01101
+  SetMasterConfiguration | 00000000000000000000000001000000 |                            01111
+        DisablePowerSave | 00000000000000000000000000000100 |                            01110
+          SetPhaseAdjust | 00000000000000000000000000001000 |                            01010
+         SetDisplayClock | 00000000001000000000000000000000 |                            01011
+     SetSecondPrechargeA | 00000000010000000000000000000000 |                            01001
+     SetSecondPrechargeB | 01000000000000000000000000000000 |                            01000
+     SetSecondPrechargeC | 00000010000000000000000000000000 |                            11000
+       SetPrechargeLevel | 00000001000000000000000000000000 |                            11001
+                SetVCOMH | 00000000000000010000000000000000 |                            11011
+        SetMasterCurrent | 00000000000000100000000000000000 |                            11010
+            SetContrastA | 00000000000001000000000000000000 |                            11110
+            SetContrastB | 00100000000000000000000000000000 |                            11111
+            SetContrastC | 00000000000000000000000000000001 |                            11101
+        DisableScrolling | 00000000000000000000000000000010 |                            11100
+             ClearScreen | 00000000000000000000000000010000 |                            10100
+                   VccEn | 00010000000000000000000000000000 |                            10101
+               DisplayOn | 00000000000010000000000000000000 |                            10111
+        PrepareNextFrame | 00000000000000001000000000000000 |                            10110
+           SetColAddress | 00000000000000000000010000000000 |                            10010
+           SetRowAddress | 00000000000000000000000100000000 |                            10011
+           WaitNextFrame | 00000000000000000000001000000000 |                            10001
+               SendPixel | 00000000000000000010000000000000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Oled_Display'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 747.289 ; gain = 490.156
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 7     
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     17 Bit       Adders := 2     
+	   3 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 4     
+	   3 Input      8 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 2     
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               40 Bit    Registers := 2     
+	               32 Bit    Registers := 1     
+	               17 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 5     
+	                6 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 6     
+	   2 Input     32 Bit        Muxes := 9     
+	  32 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 2     
+	   2 Input     17 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 10    
+	  12 Input      7 Bit        Muxes := 2     
+	  14 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 10    
+	  32 Input      6 Bit        Muxes := 2     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	  32 Input      5 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Top_Student 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module ClockDivider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module collect_logic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 4     
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 3     
+	                6 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      7 Bit        Muxes := 8     
+	   2 Input      6 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 7     
+Module get_exp 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      5 Bit        Muxes := 1     
+Module collect_render 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 2     
+	   3 Input      8 Bit       Adders := 2     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+Module Oled_Display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module exp_display 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+Module sevenseg_game 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	  12 Input      7 Bit        Muxes := 2     
+	  14 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+Module status_sevenseg_driver 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module sevenseg_mux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "game_over" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "div6_25/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "div6_25/slow_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design Top_Student has unconnected port JB[2]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port JC[2]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[15]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[14]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[13]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[12]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[11]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[10]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[9]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[8]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[7]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[6]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[5]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[4]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[3]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[2]
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (game7/dp_reg)
+INFO: [Synth 8-3886] merging instance 'other7/dp_reg' (FD) to 'other7/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'other7/seg_reg[0]' (FD) to 'other7/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'other7/seg_reg[1]' (FD) to 'other7/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'other7/seg_reg[2]' (FD) to 'other7/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'other7/seg_reg[3]' (FD) to 'other7/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'other7/seg_reg[4]' (FD) to 'other7/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'other7/seg_reg[5]' (FD) to 'other7/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'other7/seg_reg[6]' (FD) to 'other7/an_reg[0]'
+INFO: [Synth 8-3886] merging instance 'other7/an_reg[0]' (FD) to 'other7/an_reg[1]'
+INFO: [Synth 8-3886] merging instance 'other7/an_reg[1]' (FD) to 'other7/an_reg[2]'
+INFO: [Synth 8-3886] merging instance 'other7/an_reg[2]' (FD) to 'other7/an_reg[3]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\other7/an_reg[3] )
+WARNING: [Synth 8-3332] Sequential element (dp_reg) is unused and will be removed from module sevenseg_game.
+WARNING: [Synth 8-3332] Sequential element (other7/an_reg[3]) is unused and will be removed from module Top_Student.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 747.289 ; gain = 490.156
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 750.176 ; gain = 493.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 776.801 ; gain = 519.668
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 813.496 ; gain = 556.363
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 813.496 ; gain = 556.363
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 813.496 ; gain = 556.363
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 813.496 ; gain = 556.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 813.496 ; gain = 556.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 813.496 ; gain = 556.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 813.496 ; gain = 556.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |   120|
+|3     |LUT1   |    44|
+|4     |LUT2   |   185|
+|5     |LUT3   |   152|
+|6     |LUT4   |   135|
+|7     |LUT5   |   178|
+|8     |LUT6   |   335|
+|9     |MUXF7  |    14|
+|10    |FDE_1  |    64|
+|11    |FDRE   |   340|
+|12    |FDSE   |    16|
+|13    |IBUF   |     8|
+|14    |OBUF   |    26|
+|15    |OBUFT  |     2|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------+---------------+------+
+|      |Instance     |Module         |Cells |
++------+-------------+---------------+------+
+|1     |top          |               |  1621|
+|2     |  div6_25    |ClockDivider   |    54|
+|3     |  game       |collect_logic  |   554|
+|4     |  game7      |sevenseg_game  |    78|
+|5     |  oled_left  |Oled_Display   |   454|
+|6     |  oled_right |Oled_Display_0 |   418|
++------+-------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 813.496 ; gain = 556.363
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 18 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 813.496 ; gain = 220.527
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 813.496 ; gain = 556.363
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 206 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  FDE_1 => FDRE (inverted pins: C): 64 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+64 Infos, 51 Warnings, 16 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 813.496 ; gain = 569.387
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/86159/Documents/NUS/Y2S1/ee2026/project/tamagoonchi/FDP/FDP.runs/synth_1/Top_Student.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_Student_utilization_synth.rpt -pb Top_Student_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 813.496 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  4 12:01:18 2025...
