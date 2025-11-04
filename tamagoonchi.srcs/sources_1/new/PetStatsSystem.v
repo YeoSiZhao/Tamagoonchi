@@ -1,129 +1,136 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: NUS EE2026
-// Engineer: Wang Chuhao (S1_07)
-//
-// Module Name: PetStatsSystem
-// Description:
-//   Unified Hunger, Fatigue, and Health management system
-//   All stats start full (100) and slowly decrease over time.
-//   Handles feeding (L/C/R) and sleep recovery, with internal 1 Hz timing.
-//
-// Inputs:
-//   clk         - 100 MHz FPGA clock
-//   feed_mode   - Active when in Feed mode (SW)
-//   sleep_mode  - Active when in Sleep mode (SW)
-//   pulseL/C/R  - One-shot pulses from button presses
-//
-// Outputs:
-//   hunger, fatigue, health          - 0-100 percentage values (100 = full)
-//   hunger_bar_length, fatigue_bar_length, health_bar_length - mapped 0-90 pixel values
-//
-//////////////////////////////////////////////////////////////////////////////////
 
 module PetStatsSystem(
-    input  clk,                // 100 MHz Basys3 clock
-    input  feed_mode,          // Feed mode toggle
-    input  sleep_mode,         // Sleep mode toggle
-    input  pulseL, pulseC, pulseR,  // Button pulses (Left, Center, Right)
-    output reg [7:0] hunger,   // 0-100 scale (100 = full)
-    output reg [7:0] fatigue,  // 0-100 scale (100 = full energy)
-    output reg [7:0] health,   // 0-100 scale (100 = perfect health)
-    output [7:0] hunger_bar_length,
-    output [7:0] fatigue_bar_length,
-    output [7:0] health_bar_length
+    input  clk,
+    input  feed_mode,          // RAW switches (from top)
+    input  play_mode,
+    input  paint_mode,
+    input  pulseL, pulseC, pulseR,
+    output reg [7:0] hunger,   // 0-100
+    output reg [7:0] xp,       // 0-100 (loops to 0)
+    output reg [7:0] happiness,// 0-100
+    output     [7:0] hunger_bar_length,    // 0-90
+    output     [7:0] xp_bar_length,        // 0-90
+    output     [7:0] happiness_bar_length, // 0-90
+    output reg dead
 );
 
-    /////////////////////////////////////////////
-    // INITIALIZATION
-    /////////////////////////////////////////////
+    // ---------------- INIT ----------------
     initial begin
-        hunger  = 8'd100;
-        fatigue = 8'd100;
-        health  = 8'd100;
+        hunger    = 8'd100;
+        xp        = 8'd0;
+        happiness = 8'd100;
+        dead      = 1'b0;
     end
 
-    /////////////////////////////////////////////
-    // 1 Hz TIMING GENERATOR
-    /////////////////////////////////////////////
-    reg [26:0] counter1 = 0;
-    reg tick_1hz = 0;
-
+    // ---------------- 1 Hz TICK ----------------
+    reg [26:0] cnt = 0;
+    reg tick = 0;
     always @(posedge clk) begin
-        if (counter1 >= 50_000_000) begin
-            counter1 <= 0;
-            tick_1hz <= ~tick_1hz;
+        if (cnt >= 50_000_000) begin
+            cnt  <= 0;
+            tick <= ~tick;
         end else begin
-            counter1 <= counter1 + 1;
+            cnt <= cnt + 1;
         end
     end
+    reg tick_d = 0;
+    always @(posedge clk) tick_d <= tick;
+    wire sec_pulse = tick & ~tick_d; // 1 pulse per second
 
-    reg tick_prev = 0;
-    always @(posedge clk) tick_prev <= tick_1hz;
-    wire sec_pulse = tick_1hz & ~tick_prev;  // one pulse per second
+    // ---------------- MODES ----------------
+    localparam MODE_IDLE  = 2'b00;
+    localparam MODE_FEED  = 2'b01;
+    localparam MODE_PLAY  = 2'b10;
+    localparam MODE_PAINT = 2'b11;
 
-    /////////////////////////////////////////////
-    // MAIN STAT UPDATE LOGIC
-    /////////////////////////////////////////////
+    // RAW from switches:
+    reg [1:0] raw_mode;
+    always @(*) begin
+        if      (feed_mode)  raw_mode = MODE_FEED;
+        else if (play_mode)  raw_mode = MODE_PLAY;
+        else if (paint_mode) raw_mode = MODE_PAINT;
+        else                 raw_mode = MODE_IDLE;
+    end
+    wire raw_idle = (raw_mode == MODE_IDLE);
+
+    // EFFECTIVE mode (lock to idle when dead):
+    reg [1:0] eff_mode;
+    always @(*) begin
+        eff_mode = dead ? MODE_IDLE : raw_mode;
+    end
+
+    // Track previous RAW mode for clean exit penalty:
+    reg [1:0] prev_raw_mode = MODE_IDLE;
+
+    // ---------------- MAIN LOGIC ----------------
     always @(posedge clk) begin
-        // Initialize on startup
-        if (hunger === 8'bX)  hunger  <= 8'd100;
-        if (fatigue === 8'bX) fatigue <= 8'd100;
-        if (health  === 8'bX) health  <= 8'd100;
+        // X-protection
+        if (hunger    === 8'bX) hunger    <= 8'd100;
+        if (xp        === 8'bX) xp        <= 8'd0;
+        if (happiness === 8'bX) happiness <= 8'd100;
 
-        //----------------------------------
-        // FEED MODE (SWITCH SELECTED)
-        //----------------------------------
-        if (feed_mode) begin
-            // Button Left ? Apple
-            if (pulseL) begin
-                hunger  <= (hunger + 8'd12 <= 100) ? hunger + 8'd12 : 8'd100; // fills hunger, ensures max 100
-                fatigue <= (fatigue > 8) ? fatigue - 8'd8 : 8'd0;     // uses energy
-                health  <= (health < 100) ? health + 8'd2 : 8'd100;
+        // Death detect
+        if (!dead && (hunger == 0 || happiness == 0))
+            dead <= 1'b1;
+
+        // Strict reset: must be dead + raw idle + Center press
+        if (dead && raw_idle && pulseC) begin
+            hunger    <= 8'd100;
+            happiness <= 8'd100;
+            xp        <= 8'd0;
+            dead      <= 1'b0;
+        end
+
+        // Alive-only updates
+        if (!dead) begin
+            // FEED
+            if (eff_mode == MODE_FEED) begin
+                if (pulseL)
+                    hunger <= (hunger + 8'd12 <= 100) ? hunger + 8'd12 : 8'd100;
+                else if (pulseC)
+                    hunger <= (hunger + 8'd22 <= 100) ? hunger + 8'd22 : 8'd100;
+                else if (pulseR)
+                    hunger <= (hunger + 8'd32 <= 100) ? hunger + 8'd32 : 8'd100;
+                else if (sec_pulse) begin
+                    hunger     <= (hunger > 0)    ? hunger - 8'd1 : 8'd0;
+                    happiness  <= (happiness > 0) ? happiness - 8'd1 : 8'd0;
+                end
             end
-            // Button Center ? Cake
-            else if (pulseC) begin
-                hunger  <= (hunger + 8'd22 <= 100) ? hunger + 8'd22 : 8'd100;
-                fatigue <= (fatigue > 12) ? fatigue - 8'd12 : 8'd0;
-                health  <= (health < 100) ? health + 8'd3 : 8'd100;
+            // PLAY (xp over time; hunger frozen; small happiness up)
+            else if (eff_mode == MODE_PLAY && sec_pulse) begin
+                xp        <= (xp < 8'd100) ? xp + 8'd2 : 8'd0; // loop at 100
+                happiness <= (happiness < 8'd100) ? happiness + 8'd1 : 8'd100;
             end
-            // Button Right ? Drink
-            else if (pulseR) begin
-                hunger  <= (hunger + 8'd32 <= 100) ? hunger + 8'd32 : 8'd100;
-                fatigue <= (fatigue > 16) ? fatigue - 8'd16 : 8'd0;
-                health  <= (health < 100) ? health + 8'd4 : 8'd100;
+            // PAINT (hunger frozen; happiness refill)
+            else if (eff_mode == MODE_PAINT && sec_pulse) begin
+                happiness <= (happiness < 8'd100) ? happiness + 8'd3 : 8'd100;
             end
-            // Natural decay (every second)
+            // IDLE (natural decay)
             else if (sec_pulse) begin
-                hunger  <= (hunger > 0) ? hunger - 8'd1 : 8'd0;      // slowly gets hungry again
-                fatigue <= (fatigue > 0) ? fatigue - 8'd1 : 8'd0;    // gets tired
-                health  <= (health > 0) ? health - 8'd1 : 8'd0;      // slight health decay
+                hunger     <= (hunger > 0)    ? hunger - 8'd1 : 8'd0;
+                happiness  <= (happiness > 0) ? happiness - 8'd1 : 8'd0;
+            end
+
+            // Exit penalty: only on real RAW transition PLAY/PAINT -> IDLE
+            if ((prev_raw_mode == MODE_PLAY || prev_raw_mode == MODE_PAINT) &&
+                 raw_mode == MODE_IDLE) begin
+                hunger <= (hunger > 8'd10) ? hunger - 8'd10 : 8'd0;
             end
         end
-        //----------------------------------
-        // SLEEP MODE (SWITCH SELECTED)
-        //----------------------------------
-        else if (sleep_mode && sec_pulse) begin
-            hunger  <= (hunger > 0) ? hunger - 8'd1 : 8'd0;          // gets hungrier during sleep
-            fatigue <= (fatigue < 100) ? fatigue + 8'd3 : 8'd100;    // recovers energy during sleep
-            health  <= (health < 100) ? health + 8'd2 : 8'd100;      // recovers health during sleep
-        end        
-        //----------------------------------
-        // IDLE MODE (DEFAULT)
-        //----------------------------------
-        else if (sec_pulse) begin
-            hunger  <= (hunger > 0) ? hunger - 8'd1 : 8'd0;          // slowly gets hungry in idle
-            fatigue <= (fatigue > 0) ? fatigue - 8'd1 : 8'd0;        // slowly tired in idle
-            health  <= (health > 0) ? health - 8'd1 : 8'd0;          // slow health decay in idle
-        end
+
+        // update previous RAW mode every cycle
+        prev_raw_mode <= raw_mode;
     end
 
-    /////////////////////////////////////////////
-    // BAR CONVERSIONS (FOR OLED DISPLAY)
-    /////////////////////////////////////////////
-    // Ensures that the maximum bar length is 90 (pixel value cap)
-    assign hunger_bar_length  = (hunger  * 90) / 100;   // longer bar = fuller
-    assign fatigue_bar_length = (fatigue * 90) / 100;   // longer bar = more energy
-    assign health_bar_length  = (health  * 90) / 100;   // longer bar = better health
+    // ---------------- BAR LENGTHS (FIXED WIDTH MATH) ----------------
+    // Use 16-bit intermediates to avoid overflow in (value * 90) / 100
+    wire [15:0] hunger_len_calc    = (hunger    * 16'd90) / 16'd100;
+    wire [15:0] xp_len_calc        = (xp        * 16'd90) / 16'd100;
+    wire [15:0] happiness_len_calc = (happiness * 16'd90) / 16'd100;
+
+    assign hunger_bar_length    = dead ? 8'd90 : hunger_len_calc[7:0];
+    assign xp_bar_length        = dead ? 8'd90 : xp_len_calc[7:0];
+    assign happiness_bar_length = dead ? 8'd90 : happiness_len_calc[7:0];
 
 endmodule
