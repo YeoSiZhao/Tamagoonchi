@@ -1,0 +1,140 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sat Nov  8 16:44:08 2025
+| Host         : MSI running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_Student_control_sets_placed.rpt
+| Design       : Top_Student
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    71 |
+| Unused register locations in slices containing registers |   134 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      4 |            1 |
+|      8 |            5 |
+|     10 |            4 |
+|     12 |            4 |
+|     14 |            5 |
+|    16+ |           52 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             744 |          150 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             824 |          152 |
+| Yes          | No                    | No                     |             408 |           72 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            1042 |          160 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+--------------------------------------------------------+--------------------------------------------------------+------------------+----------------+
+|  Clock Signal  |                      Enable Signal                     |                    Set/Reset Signal                    | Slice Load Count | Bel Load Count |
++----------------+--------------------------------------------------------+--------------------------------------------------------+------------------+----------------+
+| ~clk6p25_BUFG  |                                                        |                                                        |                2 |              4 |
+|  clk_IBUF_BUFG |                                                        | u_exp/wave_active05_out                                |                1 |              8 |
+|  clk_IBUF_BUFG | u_mouse/Inst_Ps2Interface/shift_frame                  | u_mouse/Inst_Ps2Interface/reset_bit_count              |                1 |              8 |
+|  clk_IBUF_BUFG |                                                        | clkgen/div_cnt[3]_i_1_n_0                              |                1 |              8 |
+|  clk_IBUF_BUFG |                                                        | btn_det/btnC_active                                    |                3 |              8 |
+|  clk_IBUF_BUFG | u_led_warn/wave_index[3]_i_2_n_0                       | u_exp/wave_active05_out                                |                2 |              8 |
+|  clk_IBUF_BUFG | btn_det/coin_y_reg[2]                                  | btn_det/btnC_active                                    |                2 |             10 |
+|  clk_IBUF_BUFG | u_flappy/bird_y[5]_i_2_n_0                             | petStats/bird_y0                                       |                2 |             10 |
+|  clk_IBUF_BUFG | u_pet_jump/jump_counter                                | u_pet_jump/jump_counter[0]_i_1_n_0                     |                4 |             10 |
+|  clk_IBUF_BUFG | u_mouse/Inst_Ps2Interface/left_down_reg                |                                                        |                3 |             10 |
+|  clk_IBUF_BUFG | u_collect/player_y[5]_i_2_n_0                          | btn_det/btnC_active                                    |                3 |             12 |
+|  clk_IBUF_BUFG | u_connect4/move_count[5]_i_1_n_0                       | petStats/reset_connect4                                |                2 |             12 |
+|  clk_IBUF_BUFG | btn_det/coin_y_reg[2]                                  |                                                        |                3 |             12 |
+|  clk_IBUF_BUFG | u_pet_jump/jump_offset[5]_i_2_n_0                      | u_pet_jump/jump_offset[5]_i_1_n_0                      |                6 |             12 |
+|  clk_IBUF_BUFG | u_collect/player_x[6]_i_1_n_0                          | btn_det/btnC_active                                    |                3 |             14 |
+|  clk_IBUF_BUFG | u_collect/time_s[6]_i_1_n_0                            | btn_det/btnC_active                                    |                3 |             14 |
+|  clk_IBUF_BUFG | petStats/xp[6]_i_2_n_0                                 | petStats/xp[6]_i_1_n_0                                 |                3 |             14 |
+|  clk_IBUF_BUFG | u_mouse/Inst_Ps2Interface/delay_63clk_count[6]_i_2_n_0 | u_mouse/Inst_Ps2Interface/delay_63clk_count[6]_i_1_n_0 |                2 |             14 |
+|  clk_IBUF_BUFG | u_idle/mushroom_x[6]_i_1_n_0                           |                                                        |                2 |             14 |
+|  clk_IBUF_BUFG | petStats/enable_flappy                                 | xp_calc_flappy/captured_flappy_xp_reg[0]               |                4 |             16 |
+|  clk_IBUF_BUFG | petStats/enable_coin                                   | xp_calc_coin/captured_coin_xp_reg[0]                   |                4 |             16 |
+|  clk_IBUF_BUFG | petStats/hunger[7]_i_1_n_0                             |                                                        |                7 |             16 |
+|  clk_IBUF_BUFG | petStats/xp_to_add[7]_i_1_n_0                          |                                                        |                4 |             16 |
+|  clk_IBUF_BUFG | u_collect/E[0]                                         | btn_det/btnC_active                                    |                2 |             16 |
+|  clk_IBUF_BUFG | u_mouse/Inst_Ps2Interface/load_rx_data                 |                                                        |                3 |             16 |
+|  clk_IBUF_BUFG | u_flappy/pipe_x[7]_i_2_n_0                             | u_flappy/pipe_x[7]_i_1_n_0                             |                3 |             16 |
+|  clk_IBUF_BUFG | petStats/happiness[7]_i_2_n_0                          | petStats/happiness[7]_i_1_n_0                          |                6 |             16 |
+|  clk_IBUF_BUFG | u_mouse/Inst_Ps2Interface/x_inc_reg[0]                 |                                                        |                3 |             16 |
+|  clk_IBUF_BUFG | u_mouse/Inst_Ps2Interface/y_inc_reg[0]                 |                                                        |                3 |             16 |
+|  clk_IBUF_BUFG | u_mouse/write_data                                     |                                                        |                4 |             16 |
+|  clk_IBUF_BUFG | u_mouse/Inst_Ps2Interface/frame[9]_i_1_n_0             |                                                        |                2 |             20 |
+|  clk_IBUF_BUFG | u_mouse/Inst_Ps2Interface/delay_20us_count[10]_i_2_n_0 | u_mouse/Inst_Ps2Interface/delay_20us_count[10]_i_1_n_0 |                3 |             22 |
+|  clk_IBUF_BUFG | u_mouse/y_new_reg_n_0                                  |                                                        |                5 |             24 |
+|  clk_IBUF_BUFG | u_mouse/x_new_reg_n_0                                  |                                                        |                6 |             24 |
+|  clk_IBUF_BUFG | u_flappy/gap_y[5]_i_1_n_0                              | petStats/bird_y0                                       |                4 |             28 |
+|  clk_IBUF_BUFG | u_mouse/Inst_Ps2Interface/delay_100us_count[0]_i_2_n_0 | u_mouse/Inst_Ps2Interface/clear                        |                4 |             28 |
+|  clk_IBUF_BUFG |                                                        | u_exp/div1k[16]_i_1_n_0                                |                4 |             32 |
+|  clk_IBUF_BUFG | u_exp/ms_count                                         | petStats/ms_count_reg[0]                               |                4 |             32 |
+| ~clk6p25_BUFG  |                                                        | oled_pet/frame_counter[16]_i_1__0_n_0                  |                5 |             34 |
+| ~clk6p25_BUFG  |                                                        | oled_game/frame_counter[16]_i_1_n_0                    |                5 |             34 |
+|  clk_IBUF_BUFG | connect_btns/sel                                       | connect_btns/clear                                     |                5 |             36 |
+|  clk_IBUF_BUFG | connect_btns/cntR[0]_i_2__0_n_0                        | connect_btns/cntR[0]_i_1_n_0                           |                5 |             36 |
+|  clk_IBUF_BUFG | connect_btns/cntC[0]_i_2__1_n_0                        | connect_btns/cntC[0]_i_1_n_0                           |                5 |             36 |
+|  clk_IBUF_BUFG | flap_btns/cntU[0]_i_2_n_0                              | flap_btns/clear                                        |                5 |             38 |
+|  clk_IBUF_BUFG | flap_btns/cntC[0]_i_2_n_0                              | btn_det/cntC_reg[0]_0                                  |                5 |             38 |
+|  clk_IBUF_BUFG |                                                        | u_pet_jump/frame_div_counter[19]_i_1_n_0               |                5 |             38 |
+|  clk_IBUF_BUFG |                                                        | u_seg/digit                                            |                6 |             40 |
+|  clk_IBUF_BUFG | connect_btns/btnC_pulse_i_1_n_0                        | connect_btns/pulseC_cnt0                               |                5 |             40 |
+|  clk_IBUF_BUFG | connect_btns/btnR_pulse_i_1_n_0                        | connect_btns/pulseR_cnt[0]_i_1_n_0                     |                5 |             40 |
+|  clk_IBUF_BUFG | connect_btns/btnL_pulse_i_1_n_0                        | connect_btns/pulseL_cnt0                               |                5 |             40 |
+| ~clk6p25_BUFG  | oled_pet/delay[0]_i_1__0_n_0                           |                                                        |                5 |             40 |
+| ~clk6p25_BUFG  | oled_game/delay[0]_i_1_n_0                             |                                                        |                5 |             40 |
+|  clk_IBUF_BUFG |                                                        | u_led_warn/b5                                          |                6 |             48 |
+|  clk_IBUF_BUFG | btn_det/btnL_active                                    | btn_det/pulseL                                         |                6 |             48 |
+|  clk_IBUF_BUFG | btn_det/btnD_active                                    | btn_det/pulseD_reg_n_0                                 |                6 |             48 |
+|  clk_IBUF_BUFG | btn_det/btnR_active                                    | btn_det/pulseR                                         |                6 |             48 |
+|  clk_IBUF_BUFG | btn_det/btnU_active                                    | btn_det/pulseU_reg_n_0                                 |                6 |             48 |
+|  clk_IBUF_BUFG |                                                        | u_mouse/reset_timeout_cnt_reg_n_0                      |                6 |             48 |
+|  clk_IBUF_BUFG | btn_det/btnC_active                                    | btn_det/pulseC                                         |                6 |             48 |
+|  clk_IBUF_BUFG |                                                        | u_led_warn/b2                                          |                7 |             50 |
+|  clk_IBUF_BUFG | petStats/p_2_in                                        | u_idle/mushroom_x[6]_i_1_n_0                           |                7 |             52 |
+|  clk_IBUF_BUFG |                                                        | u_mouse/reset_periodic_check_cnt__0                    |                8 |             52 |
+|  clk_IBUF_BUFG | petStats/xp_add_counter[26]_i_2_n_0                    | petStats/xp_add_counter[26]_i_1_n_0                    |                8 |             54 |
+|  clk_IBUF_BUFG |                                                        | petStats/clear                                         |                7 |             54 |
+|  clk_IBUF_BUFG | u_led_warn/wave_active                                 | u_led_warn/wave_counter[0]_i_1_n_0                     |                8 |             64 |
+| ~clk6p25_BUFG  | oled_game/state                                        |                                                        |                8 |             64 |
+| ~clk6p25_BUFG  | oled_pet/state                                         |                                                        |                9 |             64 |
+| ~clk6p25_BUFG  |                                                        | oled_game/spi_word[39]_i_1_n_0                         |               24 |             90 |
+| ~clk6p25_BUFG  |                                                        | oled_pet/spi_word[39]_i_1__0_n_0                       |               16 |             90 |
+|  clk_IBUF_BUFG |                                                        | petStats/reset_connect4                                |               48 |            190 |
+|  clk_IBUF_BUFG |                                                        |                                                        |              149 |            742 |
++----------------+--------------------------------------------------------+--------------------------------------------------------+------------------+----------------+
+
+

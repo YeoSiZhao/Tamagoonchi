@@ -1,0 +1,2593 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Nov  8 16:40:56 2025
+# Process ID: 22984
+# Current directory: C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.runs/synth_1
+# Command line: vivado.exe -log Top_Student.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Student.tcl
+# Log file: C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.runs/synth_1/Top_Student.vds
+# Journal file: C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Top_Student.tcl -notrace
+Command: synth_design -top Top_Student -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 19924 
+WARNING: [Synth 8-2490] overwriting previous definition of module flappy_render [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/flappy_render.v:2]
+WARNING: [Synth 8-992] level is already implicitly declared earlier [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/temporary_top.v:317]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 368.895 ; gain = 111.516
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top_Student' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/temporary_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clock_6_25' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/clock_6_25.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'clock_6_25' (1#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/clock_6_25.v:3]
+INFO: [Synth 8-6157] synthesizing module 'button_detector' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/button_detector.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'button_detector' (2#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/button_detector.v:3]
+INFO: [Synth 8-638] synthesizing module 'MouseCtl' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/imports/Desktop/imports/Desktop/Mouse_Control.vhd:212]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter CHECK_PERIOD_MS bound to: 500 - type: integer 
+	Parameter TIMEOUT_PERIOD_MS bound to: 100 - type: integer 
+INFO: [Synth 8-3491] module 'Ps2Interface' declared at 'C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/imports/Desktop/imports/Desktop/Ps2Interface.vhd:156' bound to instance 'Inst_Ps2Interface' of component 'Ps2Interface' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/imports/Desktop/imports/Desktop/Mouse_Control.vhd:374]
+INFO: [Synth 8-638] synthesizing module 'Ps2Interface' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/imports/Desktop/imports/Desktop/Ps2Interface.vhd:184]
+INFO: [Synth 8-256] done synthesizing module 'Ps2Interface' (3#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/imports/Desktop/imports/Desktop/Ps2Interface.vhd:184]
+WARNING: [Synth 8-6014] Unused sequential element inc_reg was removed.  [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/imports/Desktop/imports/Desktop/Mouse_Control.vhd:455]
+WARNING: [Synth 8-6014] Unused sequential element x_inter_reg was removed.  [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/imports/Desktop/imports/Desktop/Mouse_Control.vhd:461]
+WARNING: [Synth 8-6014] Unused sequential element inc_reg was removed.  [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/imports/Desktop/imports/Desktop/Mouse_Control.vhd:519]
+WARNING: [Synth 8-6014] Unused sequential element y_inter_reg was removed.  [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/imports/Desktop/imports/Desktop/Mouse_Control.vhd:525]
+INFO: [Synth 8-256] done synthesizing module 'MouseCtl' (4#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/imports/Desktop/imports/Desktop/Mouse_Control.vhd:212]
+INFO: [Synth 8-6157] synthesizing module 'mouse_cursor' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/imports/Desktop/mouse_cursor.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'mouse_cursor' (5#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/imports/Desktop/mouse_cursor.v:4]
+INFO: [Synth 8-6157] synthesizing module 'pet_jump_controller' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/imports/Desktop/pet_jump_controller.v:4]
+	Parameter PET_X_MIN bound to: 0 - type: integer 
+	Parameter PET_X_MAX bound to: 95 - type: integer 
+	Parameter PET_Y_MIN bound to: 20 - type: integer 
+	Parameter PET_Y_MAX bound to: 63 - type: integer 
+	Parameter JUMP_HEIGHT bound to: 20 - type: integer 
+	Parameter JUMP_DURATION bound to: 30 - type: integer 
+	Parameter JUMP_UP_FRAMES bound to: 15 - type: integer 
+	Parameter FRAME_DIV bound to: 1000000 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element last_pet_clicked_reg was removed.  [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/imports/Desktop/pet_jump_controller.v:68]
+WARNING: [Synth 8-6014] Unused sequential element click_count_reg was removed.  [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/imports/Desktop/pet_jump_controller.v:70]
+WARNING: [Synth 8-6014] Unused sequential element pet_clicked_reg_reg was removed.  [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/imports/Desktop/pet_jump_controller.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'pet_jump_controller' (6#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/imports/Desktop/pet_jump_controller.v:4]
+INFO: [Synth 8-6157] synthesizing module 'PetStatsSystem' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/PetStatsSystem.v:1]
+	Parameter XP_IDLE bound to: 2'b00 
+	Parameter XP_ADD bound to: 2'b01 
+	Parameter XP_DONE bound to: 2'b10 
+	Parameter XP_ADD_DELAY bound to: 27'b000000111101000010010000000 
+INFO: [Synth 8-6155] done synthesizing module 'PetStatsSystem' (7#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/PetStatsSystem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'collect_logic' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/collect_logic.v:2]
+	Parameter W bound to: 96 - type: integer 
+	Parameter H bound to: 64 - type: integer 
+	Parameter P_SIZE bound to: 10 - type: integer 
+	Parameter C_SIZE bound to: 6 - type: integer 
+	Parameter STEP bound to: 2 - type: integer 
+	Parameter PX_MAX bound to: 86 - type: integer 
+	Parameter PY_MAX bound to: 54 - type: integer 
+	Parameter CX_MAX bound to: 90 - type: integer 
+	Parameter CY_MAX bound to: 58 - type: integer 
+	Parameter DIR_UP bound to: 2'b00 
+	Parameter DIR_DOWN bound to: 2'b01 
+	Parameter DIR_LEFT bound to: 2'b10 
+	Parameter DIR_RIGHT bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'collect_logic' (8#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/collect_logic.v:2]
+WARNING: [Synth 8-350] instance 'u_collect' of module 'collect_logic' requires 15 connections, but only 14 given [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/temporary_top.v:222]
+INFO: [Synth 8-6157] synthesizing module 'flappy_button_debouncer' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/flappy_debounce.v:3]
+	Parameter DEBOUNCE_MAX bound to: 500000 - type: integer 
+INFO: [Synth 8-4471] merging register 'btnU_hold_reg' into 'btnU_sync_prev_reg' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/flappy_debounce.v:38]
+INFO: [Synth 8-4471] merging register 'btnD_hold_reg' into 'btnD_sync_prev_reg' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/flappy_debounce.v:52]
+INFO: [Synth 8-4471] merging register 'btnC_hold_reg' into 'btnC_sync_prev_reg' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/flappy_debounce.v:66]
+WARNING: [Synth 8-6014] Unused sequential element btnU_hold_reg was removed.  [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/flappy_debounce.v:38]
+WARNING: [Synth 8-6014] Unused sequential element btnD_hold_reg was removed.  [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/flappy_debounce.v:52]
+WARNING: [Synth 8-6014] Unused sequential element btnC_hold_reg was removed.  [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/flappy_debounce.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'flappy_button_debouncer' (9#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/flappy_debounce.v:3]
+INFO: [Synth 8-6157] synthesizing module 'flappy_logic' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/flappy_logic.v:2]
+	Parameter PIPE_SPEED bound to: 1 - type: integer 
+	Parameter BIRD_SPEED bound to: 2 - type: integer 
+	Parameter GAP_SIZE bound to: 20 - type: integer 
+	Parameter BIRD_SIZE bound to: 7 - type: integer 
+	Parameter DIR_IDLE bound to: 2'b00 
+	Parameter DIR_UP bound to: 2'b01 
+	Parameter DIR_DOWN bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'flappy_logic' (10#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/flappy_logic.v:2]
+INFO: [Synth 8-6157] synthesizing module 'connect_button_debouncer' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/connect_button_debouncer.v:3]
+	Parameter DEBOUNCE_MAX bound to: 250000 - type: integer 
+	Parameter PULSE_HOLD bound to: 1000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'connect_button_debouncer' (11#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/connect_button_debouncer.v:3]
+INFO: [Synth 8-6157] synthesizing module 'connect4' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/connect4.v:1]
+	Parameter BLACK bound to: 16'b0000000000000000 
+	Parameter RED bound to: 16'b1111100000000000 
+	Parameter YELLOW bound to: 16'b1111111111100000 
+	Parameter BLUE_DARK bound to: 16'b0000000000010000 
+	Parameter GRAY bound to: 16'b1000010000010000 
+	Parameter COLS bound to: 7 - type: integer 
+	Parameter ROWS bound to: 6 - type: integer 
+	Parameter IDLE bound to: 3'b000 
+	Parameter PLAYER_TURN bound to: 3'b001 
+	Parameter DROP bound to: 3'b010 
+	Parameter CHECK_WIN bound to: 3'b011 
+	Parameter GAME_OVER bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'win_sprite' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/win_sprite.v:3]
+	Parameter BLACK bound to: 16'b0000000000000000 
+	Parameter WHITE bound to: 16'b1111111111111111 
+	Parameter GOLD bound to: 16'b1111111010100000 
+	Parameter YELLOW bound to: 16'b1111111111100000 
+	Parameter GREEN bound to: 16'b0000011111100000 
+	Parameter DARK_GREEN bound to: 16'b0000001101000000 
+	Parameter X_OFFSET bound to: 0 - type: integer 
+	Parameter Y_OFFSET bound to: 0 - type: integer 
+	Parameter TROPHY_X_SHIFT bound to: 9 - type: integer 
+	Parameter TROPHY_Y_SHIFT bound to: 10 - type: integer 
+	Parameter TEXT_X_SHIFT bound to: 9 - type: integer 
+	Parameter TEXT_Y_SHIFT bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'win_sprite' (12#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/win_sprite.v:3]
+INFO: [Synth 8-6157] synthesizing module 'lose_sprite' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/lose_sprite.v:3]
+	Parameter BLACK bound to: 16'b0000000000000000 
+	Parameter WHITE bound to: 16'b1111111111111111 
+	Parameter BROWN bound to: 16'b0111100110000000 
+	Parameter DARK_BROWN bound to: 16'b0100001000000000 
+	Parameter RED bound to: 16'b1111100000000000 
+	Parameter DARK_RED bound to: 16'b0111100000000000 
+	Parameter X_OFFSET bound to: 0 - type: integer 
+	Parameter Y_OFFSET bound to: 0 - type: integer 
+	Parameter SHIFT_X bound to: 8 - type: integer 
+	Parameter SHIFT_Y bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'lose_sprite' (13#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/lose_sprite.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/connect4.v:104]
+WARNING: [Synth 8-6014] Unused sequential element column_full_reg was removed.  [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/connect4.v:127]
+INFO: [Synth 8-6155] done synthesizing module 'connect4' (14#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/connect4.v:1]
+INFO: [Synth 8-6157] synthesizing module 'seven_seg_connect4' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/seven_seg_connect4.v:4]
+	Parameter SEG_P bound to: 8'b10001100 
+	Parameter SEG_1 bound to: 8'b11111001 
+	Parameter SEG_2 bound to: 8'b10100100 
+	Parameter SEG_OFF bound to: 8'b11111111 
+INFO: [Synth 8-6155] done synthesizing module 'seven_seg_connect4' (15#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/seven_seg_connect4.v:4]
+INFO: [Synth 8-6157] synthesizing module 'coin_xp' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/coin_xp.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'coin_xp' (16#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/coin_xp.v:1]
+INFO: [Synth 8-6157] synthesizing module 'exp_controller' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/exp.v:3]
+	Parameter MAX_LEVEL bound to: 3 - type: integer 
+	Parameter START_LEVEL bound to: 1 - type: integer 
+	Parameter PULSE_MS bound to: 800 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'exp_controller' (17#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/exp.v:3]
+INFO: [Synth 8-6157] synthesizing module 'led_warning' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/led_warning.v:3]
+	Parameter LOW_THRESH bound to: 8'b00010100 
+	Parameter CRIT_THRESH bound to: 8'b00001010 
+INFO: [Synth 8-6155] done synthesizing module 'led_warning' (18#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/led_warning.v:3]
+INFO: [Synth 8-6157] synthesizing module 'segment_display' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/segment_display.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'segment_display' (19#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/segment_display.v:3]
+INFO: [Synth 8-6157] synthesizing module 'sevenseg_game' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/sevenseg_game.v:2]
+WARNING: [Synth 8-6014] Unused sequential element blink_counter_reg was removed.  [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/sevenseg_game.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'sevenseg_game' (20#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/sevenseg_game.v:2]
+INFO: [Synth 8-6157] synthesizing module 'sevenseg_flappy' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/sevenseg_flappy.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/sevenseg_flappy.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'sevenseg_flappy' (21#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/sevenseg_flappy.v:3]
+INFO: [Synth 8-6157] synthesizing module 'idle_scene' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/idle_scene.v:3]
+	Parameter MOVE_SPEED bound to: 26'b01011111010111100001000000 
+	Parameter LEFT_EDGE bound to: 7'b0001111 
+	Parameter RIGHT_EDGE bound to: 7'b1010000 
+INFO: [Synth 8-6157] synthesizing module 'alive_sprite' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/alive_sprite.v:1]
+	Parameter TRANSPARENT bound to: 16'b0000000000000000 
+	Parameter WHITE bound to: 16'b1111111111111111 
+	Parameter ORANGE_DARK bound to: 16'b1111100000000000 
+	Parameter ORANGE_MID bound to: 16'b1111110000100000 
+	Parameter ORANGE_LIT bound to: 16'b1111111001100000 
+	Parameter BROWN_DARK bound to: 16'b0110000110000000 
+	Parameter BROWN_MID bound to: 16'b1000101001000000 
+	Parameter BEIGE bound to: 16'b1111011110111110 
+	Parameter BEIGE_DARK bound to: 16'b1110111101011101 
+	Parameter PINK bound to: 16'b1111100110011110 
+	Parameter RED_DARK bound to: 16'b1100100000000000 
+	Parameter EYE_BLACK bound to: 16'b0001000010000010 
+INFO: [Synth 8-6155] done synthesizing module 'alive_sprite' (22#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/alive_sprite.v:1]
+WARNING: [Synth 8-689] width (6) of port connection 'y' does not match port width (7) of module 'alive_sprite' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/idle_scene.v:65]
+INFO: [Synth 8-6157] synthesizing module 'dead_sprite' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/dead_sprite.v:3]
+INFO: [Synth 8-6157] synthesizing module 'maplestory_background' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/maplestory_background.v:3]
+	Parameter SKY_LIGHT bound to: 16'b0110110101111111 
+	Parameter SKY_MID bound to: 16'b0101110101011111 
+	Parameter CLOUD_WHITE bound to: 16'b1111111111111111 
+	Parameter HILL_DARK bound to: 16'b0010001100100000 
+	Parameter HILL_MID bound to: 16'b0011010001100000 
+	Parameter GRASS_BRIGHT bound to: 16'b0000011111100000 
+	Parameter GRASS_MID bound to: 16'b0000010111000000 
+	Parameter DIRT_BROWN bound to: 16'b0111001001000000 
+	Parameter BG_MAIN bound to: 16'b0100110110011111 
+	Parameter FLOWER_RED bound to: 16'b1111100000000000 
+	Parameter FLOWER_YELLOW bound to: 16'b1111111111100000 
+	Parameter FLOWER_PINK bound to: 16'b1111100110011110 
+	Parameter STEM_GREEN bound to: 16'b0000010011100000 
+	Parameter SUN_YELLOW bound to: 16'b1111111111100000 
+	Parameter TREE_TRUNK bound to: 16'b0110000110000000 
+	Parameter TREE_LEAVES bound to: 16'b0010110001100000 
+INFO: [Synth 8-6155] done synthesizing module 'maplestory_background' (23#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/maplestory_background.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'dead_sprite' (24#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/dead_sprite.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'idle_scene' (25#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/idle_scene.v:3]
+INFO: [Synth 8-6157] synthesizing module 'game_menu' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/game_menu.v:3]
+	Parameter BLACK bound to: 16'b0000000000000000 
+	Parameter WHITE bound to: 16'b1111111111111111 
+	Parameter CYAN bound to: 16'b0000011111111111 
+	Parameter BLUE bound to: 16'b0000000000011111 
+	Parameter DARK_BLUE bound to: 16'b0000000000010000 
+	Parameter GREEN bound to: 16'b0000011111100000 
+	Parameter YELLOW bound to: 16'b1111111111100000 
+	Parameter RED bound to: 16'b1111100000000000 
+	Parameter ORANGE bound to: 16'b1111110100100000 
+	Parameter PURPLE bound to: 16'b1111100000011111 
+	Parameter GRAY bound to: 16'b1000010000010000 
+	Parameter LIGHT_GRAY bound to: 16'b1100011000011000 
+	Parameter TITLE_Y_START bound to: 2 - type: integer 
+	Parameter TITLE_Y_END bound to: 9 - type: integer 
+	Parameter ICON_Y_START bound to: 18 - type: integer 
+	Parameter ICON_HEIGHT bound to: 24 - type: integer 
+	Parameter ICON_WIDTH bound to: 20 - type: integer 
+	Parameter ICON1_X bound to: 6 - type: integer 
+	Parameter ICON2_X bound to: 38 - type: integer 
+	Parameter ICON3_X bound to: 70 - type: integer 
+	Parameter LABEL_Y_START bound to: 46 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'render_title_text' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/game_menu.v:162]
+	Parameter WHITE bound to: 16'b1111111111111111 
+	Parameter YELLOW bound to: 16'b1111111111100000 
+	Parameter BLACK bound to: 16'b0000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'render_title_text' (26#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/game_menu.v:162]
+INFO: [Synth 8-6157] synthesizing module 'render_number_4' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/game_menu.v:253]
+	Parameter RED bound to: 16'b1111100000000000 
+	Parameter YELLOW bound to: 16'b1111111111100000 
+	Parameter BLACK bound to: 16'b0000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'render_number_4' (27#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/game_menu.v:253]
+INFO: [Synth 8-6157] synthesizing module 'render_flappy_bird' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/game_menu.v:280]
+	Parameter YELLOW bound to: 16'b1111111111100000 
+	Parameter ORANGE bound to: 16'b1111110100100000 
+	Parameter WHITE bound to: 16'b1111111111111111 
+	Parameter BLACK bound to: 16'b0000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'render_flappy_bird' (28#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/game_menu.v:280]
+INFO: [Synth 8-6157] synthesizing module 'render_snake' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/game_menu.v:317]
+	Parameter GREEN bound to: 16'b0000011111100000 
+	Parameter DARK_GREEN bound to: 16'b0000001101000000 
+	Parameter BLACK bound to: 16'b0000000000000000 
+	Parameter RED bound to: 16'b1111100000000000 
+INFO: [Synth 8-6155] done synthesizing module 'render_snake' (29#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/game_menu.v:317]
+INFO: [Synth 8-6157] synthesizing module 'render_sw15_label' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/game_menu.v:364]
+	Parameter WHITE bound to: 16'b1111111111111111 
+	Parameter RED bound to: 16'b1111100000000000 
+	Parameter BLACK bound to: 16'b0000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'render_sw15_label' (30#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/game_menu.v:364]
+INFO: [Synth 8-6157] synthesizing module 'render_sw14_label' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/game_menu.v:415]
+	Parameter WHITE bound to: 16'b1111111111111111 
+	Parameter YELLOW bound to: 16'b1111111111100000 
+	Parameter BLACK bound to: 16'b0000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'render_sw14_label' (31#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/game_menu.v:415]
+INFO: [Synth 8-6157] synthesizing module 'render_sw13_label' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/game_menu.v:466]
+	Parameter WHITE bound to: 16'b1111111111111111 
+	Parameter GREEN bound to: 16'b0000011111100000 
+	Parameter BLACK bound to: 16'b0000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'render_sw13_label' (32#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/game_menu.v:466]
+INFO: [Synth 8-6155] done synthesizing module 'game_menu' (33#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/game_menu.v:3]
+INFO: [Synth 8-6157] synthesizing module 'collect_render' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/collect_render.v:2]
+	Parameter W bound to: 96 - type: integer 
+	Parameter H bound to: 64 - type: integer 
+	Parameter P_SIZE bound to: 10 - type: integer 
+	Parameter C_SIZE bound to: 6 - type: integer 
+	Parameter DARK_GREEN bound to: 16'b1000111010001101 
+	Parameter MED_GREEN bound to: 16'b1010111011101111 
+	Parameter LIGHT_GREEN bound to: 16'b1100111101010001 
+	Parameter BROWN bound to: 16'b1001111010001100 
+	Parameter MUSHROOM_CAP bound to: 16'b1111101101100000 
+	Parameter MUSHROOM_SPOT1 bound to: 16'b1111111111100000 
+	Parameter MUSHROOM_SPOT2 bound to: 16'b1111111011100000 
+	Parameter MUSHROOM_STEM bound to: 16'b1111111111011111 
+	Parameter MUSHROOM_FACE bound to: 16'b1000110001010001 
+	Parameter MUSHROOM_CHEEK bound to: 16'b1111100111100111 
+	Parameter MUSHROOM_EYE bound to: 16'b0100001000001000 
+	Parameter GOLD_BRIGHT bound to: 16'b1111111010100000 
+	Parameter GOLD_MED bound to: 16'b1111110100100000 
+	Parameter GOLD_DARK bound to: 16'b1100010010000000 
+	Parameter RED bound to: 16'b1111100000000000 
+	Parameter BLACK bound to: 16'b0000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'collect_render' (34#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/collect_render.v:2]
+INFO: [Synth 8-6157] synthesizing module 'flappy_render' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/flappy_render.v:2]
+	Parameter BLACK bound to: 16'b0000000000000000 
+	Parameter SKY bound to: 16'b0101110110011111 
+	Parameter GREEN bound to: 16'b0000011111100000 
+	Parameter DARK_GREEN bound to: 16'b0000010101000000 
+	Parameter PIPE_HIGHLIGHT bound to: 16'b0000111111100000 
+	Parameter BROWN bound to: 16'b1000001000000000 
+	Parameter MUSHROOM_CAP bound to: 16'b1111110100100000 
+	Parameter MUSHROOM_CAP_DARK bound to: 16'b1100010010000000 
+	Parameter MUSHROOM_SPOT bound to: 16'b1111111111100000 
+	Parameter MUSHROOM_BODY bound to: 16'b1111111111011111 
+	Parameter MUSHROOM_FACE bound to: 16'b1000110001010001 
+	Parameter MUSHROOM_CHEEK bound to: 16'b1111101110101110 
+	Parameter MUSHROOM_EYE bound to: 16'b0100001000001000 
+	Parameter RED bound to: 16'b1111100000000000 
+	Parameter MUSHROOM_X bound to: 10 - type: integer 
+	Parameter MUSHROOM_SIZE bound to: 7 - type: integer 
+	Parameter PIPE_WIDTH bound to: 8 - type: integer 
+	Parameter GAP_SIZE bound to: 20 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flappy_render' (35#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/flappy_render.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/Oled_Display.v:58]
+	Parameter Width bound to: 96 - type: integer 
+	Parameter Height bound to: 64 - type: integer 
+	Parameter PixelCount bound to: 6144 - type: integer 
+	Parameter PixelCountWidth bound to: 13 - type: integer 
+	Parameter ClkFreq bound to: 6250000 - type: integer 
+	Parameter FrameFreq bound to: 60 - type: integer 
+	Parameter FrameDiv bound to: 104166 - type: integer 
+	Parameter FrameDivWidth bound to: 17 - type: integer 
+	Parameter PowerDelay bound to: 20 - type: integer 
+	Parameter ResetDelay bound to: 3 - type: integer 
+	Parameter VccEnDelay bound to: 20 - type: integer 
+	Parameter StartupCompleteDelay bound to: 100 - type: integer 
+	Parameter MaxDelay bound to: 100 - type: integer 
+	Parameter MaxDelayCount bound to: 625000 - type: integer 
+	Parameter StateCount bound to: 32 - type: integer 
+	Parameter StateWidth bound to: 5 - type: integer 
+	Parameter PowerUp bound to: 5'b00000 
+	Parameter Reset bound to: 5'b00001 
+	Parameter ReleaseReset bound to: 5'b00011 
+	Parameter EnableDriver bound to: 5'b00010 
+	Parameter DisplayOff bound to: 5'b00110 
+	Parameter SetRemapDisplayFormat bound to: 5'b00111 
+	Parameter SetStartLine bound to: 5'b00101 
+	Parameter SetOffset bound to: 5'b00100 
+	Parameter SetNormalDisplay bound to: 5'b01100 
+	Parameter SetMultiplexRatio bound to: 5'b01101 
+	Parameter SetMasterConfiguration bound to: 5'b01111 
+	Parameter DisablePowerSave bound to: 5'b01110 
+	Parameter SetPhaseAdjust bound to: 5'b01010 
+	Parameter SetDisplayClock bound to: 5'b01011 
+	Parameter SetSecondPrechargeA bound to: 5'b01001 
+	Parameter SetSecondPrechargeB bound to: 5'b01000 
+	Parameter SetSecondPrechargeC bound to: 5'b11000 
+	Parameter SetPrechargeLevel bound to: 5'b11001 
+	Parameter SetVCOMH bound to: 5'b11011 
+	Parameter SetMasterCurrent bound to: 5'b11010 
+	Parameter SetContrastA bound to: 5'b11110 
+	Parameter SetContrastB bound to: 5'b11111 
+	Parameter SetContrastC bound to: 5'b11101 
+	Parameter DisableScrolling bound to: 5'b11100 
+	Parameter ClearScreen bound to: 5'b10100 
+	Parameter VccEn bound to: 5'b10101 
+	Parameter DisplayOn bound to: 5'b10111 
+	Parameter PrepareNextFrame bound to: 5'b10110 
+	Parameter SetColAddress bound to: 5'b10010 
+	Parameter SetRowAddress bound to: 5'b10011 
+	Parameter WaitNextFrame bound to: 5'b10001 
+	Parameter SendPixel bound to: 5'b10000 
+	Parameter SpiCommandMaxWidth bound to: 40 - type: integer 
+	Parameter SpiCommandBitCountWidth bound to: 6 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/Oled_Display.v:145]
+INFO: [Synth 8-226] default block is never used [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/Oled_Display.v:220]
+WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/Oled_Display.v:368]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (36#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/Oled_Display.v:58]
+INFO: [Synth 8-6157] synthesizing module 'oled_renderer' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/oled_renderer.v:3]
+	Parameter BLACK bound to: 16'b0000000000000000 
+	Parameter WHITE bound to: 16'b1111111111111111 
+	Parameter RED bound to: 16'b1111100000000000 
+	Parameter GREEN bound to: 16'b0000011111100000 
+	Parameter YELLOW bound to: 16'b1111111111100000 
+	Parameter CYAN bound to: 16'b0000011111111111 
+	Parameter DARKBLUE bound to: 16'b0000000100010000 
+	Parameter GRAY bound to: 16'b1000010000010000 
+	Parameter ORANGE bound to: 16'b1111110100100000 
+	Parameter PURPLE bound to: 16'b0111100000001111 
+	Parameter DEEP_NAVY bound to: 16'b0000000000001000 
+	Parameter DARK_TEAL bound to: 16'b0000001000010000 
+	Parameter MID_TEAL bound to: 16'b0000010000011000 
+	Parameter PURPLE_BLUE bound to: 16'b0011000000001100 
+	Parameter DEEP_PURPLE bound to: 16'b0101000000000110 
+	Parameter PINK_ACCENT bound to: 16'b1000100000001000 
+INFO: [Synth 8-6157] synthesizing module 'apple_sprite' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/apple_sprite.v:2]
+	Parameter SCALE bound to: 2 - type: integer 
+	Parameter COLOR_8240 bound to: 16'b1000001001000000 
+	Parameter COLOR_07E0 bound to: 16'b0000011111100000 
+	Parameter COLOR_F800 bound to: 16'b1111100000000000 
+INFO: [Synth 8-6155] done synthesizing module 'apple_sprite' (37#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/apple_sprite.v:2]
+INFO: [Synth 8-6157] synthesizing module 'burger_sprite' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/burger_sprite.v:2]
+	Parameter SCALE bound to: 2 - type: integer 
+	Parameter COLOR_FD20 bound to: 16'b1111110100100000 
+	Parameter COLOR_07E0 bound to: 16'b0000011111100000 
+	Parameter COLOR_F800 bound to: 16'b1111100000000000 
+	Parameter COLOR_FFE0 bound to: 16'b1111111111100000 
+	Parameter COLOR_8240 bound to: 16'b1000001001000000 
+INFO: [Synth 8-6155] done synthesizing module 'burger_sprite' (38#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/burger_sprite.v:2]
+INFO: [Synth 8-6157] synthesizing module 'pizza_sprite' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/pizza_sprite.v:2]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter SCALE3 bound to: 3 - type: integer 
+	Parameter SCALE2 bound to: 2 - type: integer 
+	Parameter COLOR_FFE0 bound to: 16'b1111111111100000 
+	Parameter COLOR_F800 bound to: 16'b1111100000000000 
+	Parameter COLOR_8240 bound to: 16'b1000001001000000 
+	Parameter COLOR_FD20 bound to: 16'b1111110100100000 
+INFO: [Synth 8-6155] done synthesizing module 'pizza_sprite' (39#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/pizza_sprite.v:2]
+INFO: [Synth 8-6157] synthesizing module 'left_arrow_sprite' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/left_arrow_sprite.v:2]
+	Parameter SCALE bound to: 2 - type: integer 
+	Parameter COLOR_FFFF bound to: 16'b1111111111111111 
+INFO: [Synth 8-6155] done synthesizing module 'left_arrow_sprite' (40#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/left_arrow_sprite.v:2]
+INFO: [Synth 8-6157] synthesizing module 'right_arrow_sprite' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/right_arrow_sprite.v:2]
+	Parameter SCALE bound to: 2 - type: integer 
+	Parameter COLOR_FFFF bound to: 16'b1111111111111111 
+INFO: [Synth 8-6155] done synthesizing module 'right_arrow_sprite' (41#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/right_arrow_sprite.v:2]
+INFO: [Synth 8-6157] synthesizing module 'hunger_icon' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/bar_sprites.v:4]
+	Parameter BLACK bound to: 16'b0000000000000000 
+	Parameter RED bound to: 16'b1111100000000000 
+	Parameter DARK_RED bound to: 16'b1000100000000000 
+	Parameter WHITE bound to: 16'b1111111111111111 
+	Parameter BROWN bound to: 16'b0111001100000000 
+	Parameter LIGHT_BROWN bound to: 16'b1010010100010100 
+INFO: [Synth 8-6155] done synthesizing module 'hunger_icon' (42#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/bar_sprites.v:4]
+INFO: [Synth 8-6157] synthesizing module 'xp_text' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/bar_sprites.v:111]
+	Parameter BLACK bound to: 16'b0000000000000000 
+	Parameter WHITE bound to: 16'b1111111111111111 
+	Parameter BLUE bound to: 16'b0000000000011111 
+INFO: [Synth 8-6155] done synthesizing module 'xp_text' (43#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/bar_sprites.v:111]
+INFO: [Synth 8-6157] synthesizing module 'happiness_icon' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/bar_sprites.v:64]
+	Parameter BLACK bound to: 16'b0000000000000000 
+	Parameter YELLOW bound to: 16'b1111111111100000 
+	Parameter ORANGE bound to: 16'b1111110000000000 
+INFO: [Synth 8-6155] done synthesizing module 'happiness_icon' (44#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/bar_sprites.v:64]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/oled_renderer.v:135]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/oled_renderer.v:144]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/oled_renderer.v:151]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/oled_renderer.v:158]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/oled_renderer.v:165]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/oled_renderer.v:174]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/oled_renderer.v:181]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/oled_renderer.v:189]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/oled_renderer.v:221]
+INFO: [Synth 8-6155] done synthesizing module 'oled_renderer' (45#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/oled_renderer.v:3]
+WARNING: [Synth 8-689] width (32) of port connection 'x' does not match port width (7) of module 'oled_renderer' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/temporary_top.v:450]
+WARNING: [Synth 8-689] width (32) of port connection 'y' does not match port width (7) of module 'oled_renderer' [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/temporary_top.v:451]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (46#1) [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/temporary_top.v:3]
+WARNING: [Synth 8-3331] design oled_renderer has unconnected port xp[7]
+WARNING: [Synth 8-3331] design oled_renderer has unconnected port xp[6]
+WARNING: [Synth 8-3331] design oled_renderer has unconnected port xp[5]
+WARNING: [Synth 8-3331] design oled_renderer has unconnected port xp[4]
+WARNING: [Synth 8-3331] design oled_renderer has unconnected port xp[3]
+WARNING: [Synth 8-3331] design oled_renderer has unconnected port xp[2]
+WARNING: [Synth 8-3331] design oled_renderer has unconnected port xp[1]
+WARNING: [Synth 8-3331] design oled_renderer has unconnected port xp[0]
+WARNING: [Synth 8-3331] design oled_renderer has unconnected port btnC_active
+WARNING: [Synth 8-3331] design oled_renderer has unconnected port game_mode
+WARNING: [Synth 8-3331] design collect_render has unconnected port clk
+WARNING: [Synth 8-3331] design dead_sprite has unconnected port clk
+WARNING: [Synth 8-3331] design sevenseg_game has unconnected port game_over
+WARNING: [Synth 8-3331] design led_warning has unconnected port level[3]
+WARNING: [Synth 8-3331] design led_warning has unconnected port level[2]
+WARNING: [Synth 8-3331] design led_warning has unconnected port level[1]
+WARNING: [Synth 8-3331] design led_warning has unconnected port level[0]
+WARNING: [Synth 8-3331] design PetStatsSystem has unconnected port pulseL
+WARNING: [Synth 8-3331] design PetStatsSystem has unconnected port pulseR
+WARNING: [Synth 8-3331] design Top_Student has unconnected port JB[2]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port JA[2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 478.578 ; gain = 221.199
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin u_collect:dead to constant 0 [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/temporary_top.v:222]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 478.578 ; gain = 221.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 478.578 ; gain = 221.199
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/constrs_1/imports/ee2026/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'RsRx'. [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/constrs_1/imports/ee2026/Basys3_Master.xdc:136]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/constrs_1/imports/ee2026/Basys3_Master.xdc:136]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RsTx'. [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/constrs_1/imports/ee2026/Basys3_Master.xdc:137]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/constrs_1/imports/ee2026/Basys3_Master.xdc:137]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/constrs_1/imports/ee2026/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/constrs_1/imports/ee2026/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Student_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Student_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 829.566 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 829.566 ; gain = 572.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 829.566 ; gain = 572.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 829.566 ; gain = 572.188
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "clk_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Ps2Interface'
+INFO: [Synth 8-5546] ROM "reset_bit_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "busy" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "read_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "load_tx_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ps2_clk_h" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_100us_counter_enable" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_20us_counter_enable" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_63clk_counter_enable" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'MouseCtl'
+INFO: [Synth 8-5545] ROM "periodic_check_tick" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "timeout" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reset_periodic_check_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "new_event" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/imports/Desktop/pet_jump_controller.v:93]
+INFO: [Synth 8-5544] ROM "dir" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "btnL_sync" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "btnR_sync" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "btnC_sync" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "pixel" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pixel" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "board_reg[0][0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "board_reg[0][1]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "board_reg[0][2]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "board_reg[0][3]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "board_reg[0][4]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "board_reg[0][5]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "drop_row" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/connect4.v:187]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/connect4.v:187]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/connect4.v:187]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/connect4.v:187]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/connect4.v:187]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/connect4.v:187]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/connect4.v:187]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/connect4.v:187]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/connect4.v:187]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/connect4.v:187]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/connect4.v:187]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/connect4.v:187]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/connect4.v:187]
+INFO: [Synth 8-5544] ROM "board_reg[0][0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "board_reg[0][1]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "board_reg[0][2]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "board_reg[0][3]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "board_reg[0][4]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "board_reg[0][5]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exp0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exp" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Common 17-14] Message 'Synth 8-5544' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5546] ROM "tick_1ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "b2" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "b5" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "b2" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "b5" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "digit" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pixel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mush_pixel" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mush_pixel" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mush_pixel" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mush_pixel" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "pixel_rgb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pixel_rgb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Oled_Display'
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bitmap_FD20" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bitmap_07E0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bitmap_F800" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bitmap_FFE0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bitmap_8240" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bitmap_FFE0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bitmap_F800" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bitmap_8240" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bitmap_FD20" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bitmap_FFE0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bitmap_F800" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bitmap_8240" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bitmap_FD20" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "text_pixel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "oled_data" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                00000000000000001 |                            00000
+            rx_down_edge |                00000000000000010 |                            00011
+                rx_clk_l |                00000000000000100 |                            00010
+                rx_clk_h |                00000000000001000 |                            00001
+         rx_error_parity |                00000000000010000 |                            00100
+           rx_data_ready |                00000000000100000 |                            00101
+          tx_force_clk_l |                00000000001000000 |                            00110
+      tx_bring_data_down |                00000000010000000 |                            00111
+          tx_release_clk |                00000000100000000 |                            01000
+ tx_first_wait_down_edge |                00000001000000000 |                            01001
+                tx_clk_l |                00000010000000000 |                            01010
+         tx_wait_up_edge |                00000100000000000 |                            01011
+tx_wait_up_edge_before_ack |                00001000000000000 |                            01101
+             tx_wait_ack |                00010000000000000 |                            01110
+         tx_received_ack |                00100000000000000 |                            01111
+         tx_error_no_ack |                01000000000000000 |                            10000
+                tx_clk_h |                10000000000000000 |                            01100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Ps2Interface'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   reset | 0000000000000000000000000000000000001 |                           000000
+          reset_wait_ack | 0000000000000000000000000000000000010 |                           000001
+reset_wait_bat_completion | 0000000000000000000000000000000000100 |                           000010
+           reset_wait_id | 0000000000000000000000000000000001000 |                           000011
+reset_set_sample_rate_200 | 0000000000000000000000000000000010000 |                           000100
+reset_set_sample_rate_200_wait_ack | 0000000000000000000000000000000100000 |                           000101
+reset_send_sample_rate_200 | 0000000000000000000000000000001000000 |                           000110
+reset_send_sample_rate_200_wait_ack | 0000000000000000000000000000010000000 |                           000111
+reset_set_sample_rate_100 | 0000000000000000000000000000100000000 |                           001000
+reset_set_sample_rate_100_wait_ack | 0000000000000000000000000001000000000 |                           001001
+reset_send_sample_rate_100 | 0000000000000000000000000010000000000 |                           001010
+reset_send_sample_rate_100_wait_ack | 0000000000000000000000000100000000000 |                           001011
+reset_set_sample_rate_80 | 0000000000000000000000001000000000000 |                           001100
+reset_set_sample_rate_80_wait_ack | 0000000000000000000000010000000000000 |                           001101
+reset_send_sample_rate_80 | 0000000000000000000000100000000000000 |                           001110
+reset_send_sample_rate_80_wait_ack | 0000000000000000000001000000000000000 |                           001111
+           reset_read_id | 0000000000000000000010000000000000000 |                           010000
+  reset_read_id_wait_ack | 0000000000000000000100000000000000000 |                           010001
+   reset_read_id_wait_id | 0000000000000000001000000000000000000 |                           010010
+    reset_set_resolution | 0000000000000000010000000000000000000 |                           010011
+reset_set_resolution_wait_ack | 0000000000000000100000000000000000000 |                           010100
+   reset_send_resolution | 0000000000000001000000000000000000000 |                           010101
+reset_send_resolution_wait_ack | 0000000000000010000000000000000000000 |                           010110
+reset_set_sample_rate_40 | 0000000000000100000000000000000000000 |                           010111
+reset_set_sample_rate_40_wait_ack | 0000000000001000000000000000000000000 |                           011000
+reset_send_sample_rate_40 | 0000000000010000000000000000000000000 |                           011001
+reset_send_sample_rate_40_wait_ack | 0000000000100000000000000000000000000 |                           011010
+  reset_enable_reporting | 0000000001000000000000000000000000000 |                           011011
+reset_enable_reporting_wait_ack | 0000000010000000000000000000000000000 |                           011100
+             read_byte_1 | 0000000100000000000000000000000000000 |                           011101
+             read_byte_2 | 0000001000000000000000000000000000000 |                           011110
+             read_byte_3 | 0000010000000000000000000000000000000 |                           011111
+             read_byte_4 | 0000100000000000000000000000000000000 |                           100000
+          mark_new_event | 0001000000000000000000000000000000000 |                           100100
+           check_read_id | 0010000000000000000000000000000000000 |                           100001
+  check_read_id_wait_ack | 0100000000000000000000000000000000000 |                           100010
+   check_read_id_wait_id | 1000000000000000000000000000000000000 |                           100011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'MouseCtl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 PowerUp | 00000000100000000000000000000000 |                            00000
+                   Reset | 00000000000100000000000000000000 |                            00001
+            ReleaseReset | 00000000000000000000100000000000 |                            00011
+            EnableDriver | 00000000000000000001000000000000 |                            00010
+              DisplayOff | 00000000000000000100000000000000 |                            00110
+   SetRemapDisplayFormat | 00000100000000000000000000000000 |                            00111
+            SetStartLine | 00001000000000000000000000000000 |                            00101
+               SetOffset | 10000000000000000000000000000000 |                            00100
+        SetNormalDisplay | 00000000000000000000000010000000 |                            01100
+       SetMultiplexRatio | 00000000000000000000000000100000 |                            01101
+  SetMasterConfiguration | 00000000000000000000000001000000 |                            01111
+        DisablePowerSave | 00000000000000000000000000000100 |                            01110
+          SetPhaseAdjust | 00000000000000000000000000001000 |                            01010
+         SetDisplayClock | 00000000001000000000000000000000 |                            01011
+     SetSecondPrechargeA | 00000000010000000000000000000000 |                            01001
+     SetSecondPrechargeB | 01000000000000000000000000000000 |                            01000
+     SetSecondPrechargeC | 00000010000000000000000000000000 |                            11000
+       SetPrechargeLevel | 00000001000000000000000000000000 |                            11001
+                SetVCOMH | 00000000000000010000000000000000 |                            11011
+        SetMasterCurrent | 00000000000000100000000000000000 |                            11010
+            SetContrastA | 00000000000001000000000000000000 |                            11110
+            SetContrastB | 00100000000000000000000000000000 |                            11111
+            SetContrastC | 00000000000000000000000000000001 |                            11101
+        DisableScrolling | 00000000000000000000000000000010 |                            11100
+             ClearScreen | 00000000000000000000000000010000 |                            10100
+                   VccEn | 00010000000000000000000000000000 |                            10101
+               DisplayOn | 00000000000010000000000000000000 |                            10111
+        PrepareNextFrame | 00000000000000001000000000000000 |                            10110
+           SetColAddress | 00000000000000000000010000000000 |                            10010
+           SetRowAddress | 00000000000000000000000100000000 |                            10011
+           WaitNextFrame | 00000000000000000000001000000000 |                            10001
+               SendPixel | 00000000000000000010000000000000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Oled_Display'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 829.566 ; gain = 572.188
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |Top_Student__GB0 |           1|     28885|
+|2     |Top_Student__GB1 |           1|      2553|
+|3     |Top_Student__GB2 |           1|     16374|
+|4     |Top_Student__GB3 |           1|     16539|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 119   
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 2     
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input     26 Bit       Adders := 2     
+	   2 Input     25 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     20 Bit       Adders := 2     
+	   2 Input     17 Bit       Adders := 3     
+	   2 Input     12 Bit       Adders := 4     
+	   2 Input     11 Bit       Adders := 1     
+	   3 Input      9 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 11    
+	   2 Input      8 Bit       Adders := 25    
+	   3 Input      8 Bit       Adders := 6     
+	   3 Input      7 Bit       Adders := 5     
+	   2 Input      7 Bit       Adders := 25    
+	   2 Input      6 Bit       Adders := 15    
+	   2 Input      5 Bit       Adders := 11    
+	   2 Input      4 Bit       Adders := 9     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 4     
++---XORs : 
+	   2 Input      8 Bit         XORs := 2     
+	   2 Input      3 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 2     
++---Registers : 
+	               40 Bit    Registers := 2     
+	               27 Bit    Registers := 1     
+	               26 Bit    Registers := 2     
+	               25 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               20 Bit    Registers := 2     
+	               17 Bit    Registers := 3     
+	               16 Bit    Registers := 2     
+	               12 Bit    Registers := 6     
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 18    
+	                7 Bit    Registers := 6     
+	                6 Bit    Registers := 8     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 7     
+	                3 Bit    Registers := 9     
+	                2 Bit    Registers := 48    
+	                1 Bit    Registers := 103   
++---Multipliers : 
+	                32x32  Multipliers := 22    
+	                 5x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 6     
+	  37 Input     37 Bit        Muxes := 1     
+	   2 Input     37 Bit        Muxes := 69    
+	  32 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     27 Bit        Muxes := 1     
+	   2 Input     27 Bit        Muxes := 1     
+	   2 Input     26 Bit        Muxes := 2     
+	   2 Input     25 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 3     
+	   4 Input     23 Bit        Muxes := 2     
+	  16 Input     23 Bit        Muxes := 1     
+	   8 Input     21 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 1     
+	  32 Input     20 Bit        Muxes := 2     
+	   2 Input     20 Bit        Muxes := 2     
+	   2 Input     17 Bit        Muxes := 21    
+	  25 Input     17 Bit        Muxes := 6     
+	  17 Input     17 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 5     
+	   2 Input     16 Bit        Muxes := 218   
+	  10 Input     16 Bit        Muxes := 3     
+	   5 Input     16 Bit        Muxes := 5     
+	   7 Input     16 Bit        Muxes := 4     
+	   9 Input     16 Bit        Muxes := 2     
+	   8 Input     16 Bit        Muxes := 4     
+	   6 Input     16 Bit        Muxes := 5     
+	   4 Input     16 Bit        Muxes := 48    
+	  25 Input     16 Bit        Muxes := 1     
+	  14 Input     16 Bit        Muxes := 1     
+	  12 Input     16 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 24    
+	   5 Input     15 Bit        Muxes := 1     
+	   3 Input     15 Bit        Muxes := 4     
+	  25 Input     14 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 11    
+	   2 Input     11 Bit        Muxes := 5     
+	   3 Input     11 Bit        Muxes := 1     
+	  25 Input     11 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 38    
+	   6 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 5     
+	  12 Input      8 Bit        Muxes := 1     
+	  13 Input      8 Bit        Muxes := 1     
+	  37 Input      8 Bit        Muxes := 3     
+	   3 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 21    
+	   4 Input      7 Bit        Muxes := 2     
+	  32 Input      6 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 17    
+	   6 Input      6 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 8     
+	  32 Input      5 Bit        Muxes := 2     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 8     
+	   4 Input      4 Bit        Muxes := 4     
+	   3 Input      4 Bit        Muxes := 1     
+	  37 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 6     
+	   7 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 235   
+	   3 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 53    
+	   4 Input      1 Bit        Muxes := 20    
+	   5 Input      1 Bit        Muxes := 1     
+	  17 Input      1 Bit        Muxes := 4     
+	  37 Input      1 Bit        Muxes := 20    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Top_Student 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 7     
+	   2 Input      8 Bit        Muxes := 6     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+Module Oled_Display__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module flappy_render 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 3     
+	   3 Input      7 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 3     
++---Muxes : 
+	   3 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+Module render_title_text 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input     16 Bit        Muxes := 1     
+Module render_number_4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input     16 Bit        Muxes := 1     
+Module render_flappy_bird 
+Detailed RTL Component Info : 
++---Muxes : 
+	   7 Input     16 Bit        Muxes := 1     
+Module render_snake 
+Detailed RTL Component Info : 
++---Muxes : 
+	   9 Input     16 Bit        Muxes := 1     
+Module render_sw15_label 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module render_sw14_label 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module render_sw13_label 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module game_menu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 1     
+Module flappy_logic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   3 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+Module win_sprite 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 7     
+	   5 Input     16 Bit        Muxes := 1     
+	   7 Input     16 Bit        Muxes := 1     
+	   3 Input     11 Bit        Muxes := 1     
+Module lose_sprite 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 13    
+	   6 Input     16 Bit        Muxes := 2     
+Module connect4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 70    
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 42    
+	                1 Bit    Registers := 7     
++---Multipliers : 
+	                32x32  Multipliers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 47    
+	   4 Input     16 Bit        Muxes := 41    
+	   5 Input     16 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 52    
+	   2 Input      1 Bit        Muxes := 125   
+	   4 Input      1 Bit        Muxes := 8     
+Module seven_seg_connect4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+Module coin_xp__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module coin_xp 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module segment_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	  12 Input      8 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module sevenseg_game 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+Module sevenseg_flappy 
+Detailed RTL Component Info : 
++---Muxes : 
+	  13 Input      8 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+Module Oled_Display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module apple_sprite 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
++---Muxes : 
+	  25 Input     17 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+	  25 Input     14 Bit        Muxes := 1     
+	  25 Input     11 Bit        Muxes := 1     
+Module burger_sprite 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
++---Muxes : 
+	  25 Input     17 Bit        Muxes := 5     
+	   6 Input     16 Bit        Muxes := 1     
+Module pizza_sprite 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     23 Bit        Muxes := 3     
+	   4 Input     23 Bit        Muxes := 2     
+	  16 Input     23 Bit        Muxes := 1     
+	   8 Input     21 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 1     
+	   5 Input     16 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+Module left_arrow_sprite 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Muxes : 
+	  25 Input     16 Bit        Muxes := 1     
+Module right_arrow_sprite 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
++---Muxes : 
+	  25 Input     14 Bit        Muxes := 1     
+Module hunger_icon__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input     16 Bit        Muxes := 1     
+	   7 Input     16 Bit        Muxes := 1     
+Module xp_text 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 13    
+Module happiness_icon 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 4     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+Module hunger_icon 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input     16 Bit        Muxes := 1     
+	   7 Input     16 Bit        Muxes := 1     
+Module oled_renderer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   3 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 48    
+	   4 Input     16 Bit        Muxes := 2     
+	   2 Input     15 Bit        Muxes := 2     
+	   5 Input     15 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 5     
+	   2 Input      6 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 29    
+	   6 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+Module collect_render 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 1     
+	   3 Input      7 Bit       Adders := 3     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      3 Bit         XORs := 1     
++---Muxes : 
+	  14 Input     16 Bit        Muxes := 1     
+Module led_warning 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     26 Bit       Adders := 1     
+	   2 Input     25 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               26 Bit    Registers := 1     
+	               25 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     26 Bit        Muxes := 1     
+	   2 Input     25 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module collect_logic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 4     
++---XORs : 
+	   2 Input      8 Bit         XORs := 2     
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 3     
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 6     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 1     
+Module PetStatsSystem 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 6     
+	   2 Input      7 Bit       Adders := 4     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   4 Input     27 Bit        Muxes := 1     
+	   2 Input     27 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 23    
+	   2 Input      7 Bit        Muxes := 7     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   7 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 29    
+	   5 Input      1 Bit        Muxes := 1     
+Module alive_sprite 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input     16 Bit        Muxes := 1     
+	   6 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 9     
+	  12 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 2     
+	   5 Input     16 Bit        Muxes := 1     
+	   9 Input     16 Bit        Muxes := 1     
+Module maplestory_background__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 16    
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
++---Multipliers : 
+	                32x32  Multipliers := 10    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 22    
+	   2 Input     15 Bit        Muxes := 9     
+	   3 Input     15 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+Module dead_sprite 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 24    
+	   6 Input     16 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 1     
+	   8 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+	   3 Input     15 Bit        Muxes := 2     
+	   2 Input     15 Bit        Muxes := 2     
+Module maplestory_background 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 16    
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
++---Multipliers : 
+	                32x32  Multipliers := 10    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 22    
+	   2 Input     15 Bit        Muxes := 9     
+	   3 Input     15 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+Module idle_scene 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 5     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module exp_controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+Module connect_button_debouncer 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module flappy_button_debouncer 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 12    
+Module pet_jump_controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Multipliers : 
+	                 5x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module mouse_cursor 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   3 Input      7 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+Module Ps2Interface 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 3     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	  17 Input     17 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 18    
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	  17 Input      1 Bit        Muxes := 4     
+Module MouseCtl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     26 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               26 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               12 Bit    Registers := 6     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	  37 Input     37 Bit        Muxes := 1     
+	   2 Input     37 Bit        Muxes := 69    
+	   2 Input     26 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 10    
+	   2 Input      9 Bit        Muxes := 2     
+	  37 Input      8 Bit        Muxes := 3     
+	  37 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	  37 Input      1 Bit        Muxes := 20    
+Module button_detector 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 5     
+	                1 Bit    Registers := 10    
+Module clock_6_25 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/connect4.v:202]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/connect4.v:202]
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+INFO: [Synth 8-5546] ROM "u_seg/digit" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "oled_pet/fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "oled_pet/fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bitmap_F800" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bitmap_FFE0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "oled_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "text_pixel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "b5" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "b2" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "pixel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/maplestory_background.v:46]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/maplestory_background.v:46]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/maplestory_background.v:52]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/maplestory_background.v:52]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/maplestory_background.v:39]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/maplestory_background.v:39]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/maplestory_background.v:82]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/maplestory_background.v:82]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/maplestory_background.v:91]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/maplestory_background.v:91]
+DSP Report: Generating DSP pixel4, operation Mode is: A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is: A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is: A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is: A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is: A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is: A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is: A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is: A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel3, operation Mode is: A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+INFO: [Synth 8-5545] ROM "mush_pixel" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mush_pixel" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mush_pixel" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mush_pixel" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/maplestory_background.v:46]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/maplestory_background.v:46]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/maplestory_background.v:52]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/maplestory_background.v:52]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/maplestory_background.v:39]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/maplestory_background.v:39]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/maplestory_background.v:82]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/maplestory_background.v:82]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/maplestory_background.v:91]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.srcs/sources_1/imports/sources_1/new/maplestory_background.v:91]
+DSP Report: Generating DSP pixel4, operation Mode is: A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is: A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is: A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is: A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is: A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is: A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is: A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is: A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel3, operation Mode is: A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+INFO: [Synth 8-5546] ROM "tick_1ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "btnL_sync" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "btnR_sync" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "btnC_sync" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "periodic_check_tick" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "timeout" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design Top_Student has unconnected port JB[2]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port JA[2]
+INFO: [Synth 8-3886] merging instance 'i_0/u_connect4/exp_reg[0]' (FDRE) to 'i_0/u_connect4/exp_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_connect4/exp_reg[2]' (FDRE) to 'i_0/u_connect4/exp_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_connect4/exp_reg[4]' (FDRE) to 'i_0/u_connect4/exp_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_connect4/exp_reg[6]' (FDRE) to 'i_0/u_connect4/exp_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/u_connect4/\exp_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_game7seg/\seg_reg[7] )
+INFO: [Synth 8-3886] merging instance 'i_0/captured_connect4_xp_reg[0]' (FDE) to 'i_0/captured_connect4_xp_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_0/captured_connect4_xp_reg[2]' (FDE) to 'i_0/captured_connect4_xp_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_0/captured_connect4_xp_reg[4]' (FDE) to 'i_0/captured_connect4_xp_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_0/captured_connect4_xp_reg[6]' (FDE) to 'i_0/captured_connect4_xp_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\captured_connect4_xp_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (bird_y_reg[0]) is unused and will be removed from module flappy_logic.
+WARNING: [Synth 8-3332] Sequential element (exp_reg[7]) is unused and will be removed from module connect4.
+WARNING: [Synth 8-3332] Sequential element (seg_reg[7]) is unused and will be removed from module sevenseg_game.
+INFO: [Synth 8-3886] merging instance 'i_2/u_collect/coin_y_reg[0]' (FDE) to 'i_2/u_collect/coin_x_reg[0]'
+WARNING: [Synth 8-3332] Sequential element (xp_add_done_reg) is unused and will be removed from module PetStatsSystem.
+INFO: [Synth 8-3886] merging instance 'i_3/flap_btns/btnD_raw_prev_reg' (FD) to 'i_3/btn_det/btnD_sync_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_3/btn_det/btnU_sync_reg[0]' (FD) to 'i_3/flap_btns/btnU_raw_prev_reg'
+INFO: [Synth 8-3886] merging instance 'i_3/u_mouse/x_max_reg[0]' (FDRE) to 'i_3/u_mouse/y_max_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_3/u_mouse/x_max_reg[1]' (FDRE) to 'i_3/u_mouse/y_max_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_3/u_mouse/x_max_reg[2]' (FDRE) to 'i_3/u_mouse/y_max_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_3/u_mouse/x_max_reg[3]' (FDRE) to 'i_3/u_mouse/y_max_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_3/u_mouse/x_max_reg[4]' (FDRE) to 'i_3/u_mouse/y_max_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_3/u_mouse/x_max_reg[5]' (FDRE) to 'i_3/u_mouse/y_max_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_3/u_mouse/x_max_reg[6]' (FDSE) to 'i_3/u_mouse/y_max_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_3/u_mouse/x_max_reg[7]' (FDSE) to 'i_3/u_mouse/y_max_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_3/u_mouse/x_max_reg[8]' (FDSE) to 'i_3/u_mouse/y_max_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_3/u_mouse/x_max_reg[9]' (FDSE) to 'i_3/u_mouse/y_max_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_3/u_mouse/x_max_reg[10]' (FDRE) to 'i_3/u_mouse/y_max_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_3/u_mouse/x_max_reg[11]' (FDRE) to 'i_3/u_mouse/y_max_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_3/u_mouse/y_max_reg[0]' (FDRE) to 'i_3/u_mouse/y_max_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_3/u_mouse/y_max_reg[1]' (FDRE) to 'i_3/u_mouse/y_max_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_3/u_mouse/y_max_reg[2]' (FDRE) to 'i_3/u_mouse/y_max_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_3/u_mouse/y_max_reg[3]' (FDRE) to 'i_3/u_mouse/y_max_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_3/u_mouse/y_max_reg[4]' (FDRE) to 'i_3/u_mouse/y_max_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_3/u_mouse/y_max_reg[5]' (FDRE) to 'i_3/u_mouse/y_max_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_3/u_mouse/y_max_reg[6]' (FDRE) to 'i_3/u_mouse/y_max_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_3/u_mouse/y_max_reg[7]' (FDSE) to 'i_3/u_mouse/y_max_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_3/u_mouse/y_max_reg[8]' (FDRE) to 'i_3/u_mouse/y_max_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_3/u_mouse/y_max_reg[10]' (FDRE) to 'i_3/u_mouse/y_max_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\u_mouse/y_max_reg[11] )
+INFO: [Synth 8-3886] merging instance 'i_3/flap_btns/btnC_raw_prev_reg' (FD) to 'i_3/btn_det/btnC_sync_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_3/u_exp/level_reg[2]' (FDRE) to 'i_3/u_exp/level_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\u_exp/level_reg[3] )
+INFO: [Synth 8-3886] merging instance 'i_2/u_collect/rand_y_reg_reg[6]' (FD) to 'i_2/u_collect/rand_x_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_2/u_collect/rand_y_reg_reg[4]' (FD) to 'i_2/u_collect/rand_x_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_2/u_collect/rand_y_reg_reg[3]' (FD) to 'i_2/u_collect/rand_x_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_2/u_collect/rand_y_reg_reg[5]' (FD) to 'i_2/u_collect/rand_x_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_2/u_collect/rand_y_reg_reg[2]' (FD) to 'i_2/u_collect/rand_x_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_2/u_collect/rand_y_reg_reg[1]' (FD) to 'i_2/u_collect/rand_x_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_2/u_collect/rand_y_reg_reg[0]' (FD) to 'i_2/u_collect/rand_x_reg_reg[0]'
+WARNING: [Synth 8-3332] Sequential element (bird_y_reg[6]) is unused and will be removed from module flappy_logic.
+WARNING: [Synth 8-3332] Sequential element (rand_x_reg_reg[7]) is unused and will be removed from module collect_logic.
+WARNING: [Synth 8-3332] Sequential element (xp_reg[7]) is unused and will be removed from module PetStatsSystem.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:03 ; elapsed = 00:01:12 . Memory (MB): peak = 925.820 ; gain = 668.441
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3323] Resources of type DSP have been overutilized. Used = 127, Available = 90. Use report_utilization command for details.
+DSP Report: Generating DSP oled_data3, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is (post resource management): A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP bg/pixel4, operation Mode is (post resource management): A*B.
+DSP Report: operator bg/pixel4 is absorbed into DSP bg/pixel4.
+DSP Report: operator bg/pixel4 is absorbed into DSP bg/pixel4.
+DSP Report: Generating DSP bg/pixel4, operation Mode is (post resource management): A*B.
+DSP Report: operator bg/pixel4 is absorbed into DSP bg/pixel4.
+DSP Report: operator bg/pixel4 is absorbed into DSP bg/pixel4.
+DSP Report: Generating DSP bg/pixel4, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator bg/pixel4 is absorbed into DSP bg/pixel4.
+DSP Report: operator bg/pixel4 is absorbed into DSP bg/pixel4.
+DSP Report: Generating DSP bg/pixel4, operation Mode is (post resource management): A*B.
+DSP Report: operator bg/pixel4 is absorbed into DSP bg/pixel4.
+DSP Report: operator bg/pixel4 is absorbed into DSP bg/pixel4.
+DSP Report: Generating DSP bg/pixel4, operation Mode is (post resource management): A*B.
+DSP Report: operator bg/pixel4 is absorbed into DSP bg/pixel4.
+DSP Report: operator bg/pixel4 is absorbed into DSP bg/pixel4.
+DSP Report: Generating DSP bg/pixel4, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator bg/pixel4 is absorbed into DSP bg/pixel4.
+DSP Report: operator bg/pixel4 is absorbed into DSP bg/pixel4.
+DSP Report: Generating DSP bg/pixel4, operation Mode is (post resource management): A*B.
+DSP Report: operator bg/pixel4 is absorbed into DSP bg/pixel4.
+DSP Report: operator bg/pixel4 is absorbed into DSP bg/pixel4.
+DSP Report: Generating DSP bg/pixel4, operation Mode is (post resource management): A*B.
+DSP Report: operator bg/pixel4 is absorbed into DSP bg/pixel4.
+DSP Report: operator bg/pixel4 is absorbed into DSP bg/pixel4.
+DSP Report: Generating DSP bg/pixel4, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator bg/pixel4 is absorbed into DSP bg/pixel4.
+DSP Report: operator bg/pixel4 is absorbed into DSP bg/pixel4.
+DSP Report: Generating DSP bg/pixel4, operation Mode is (post resource management): A*B.
+DSP Report: operator bg/pixel4 is absorbed into DSP bg/pixel4.
+DSP Report: operator bg/pixel4 is absorbed into DSP bg/pixel4.
+DSP Report: Generating DSP bg/pixel4, operation Mode is (post resource management): A*B.
+DSP Report: operator bg/pixel4 is absorbed into DSP bg/pixel4.
+DSP Report: operator bg/pixel4 is absorbed into DSP bg/pixel4.
+DSP Report: Generating DSP bg/pixel4, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator bg/pixel4 is absorbed into DSP bg/pixel4.
+DSP Report: operator bg/pixel4 is absorbed into DSP bg/pixel4.
+DSP Report: Generating DSP bg/pixel3, operation Mode is (post resource management): A*B.
+DSP Report: operator bg/pixel3 is absorbed into DSP bg/pixel3.
+DSP Report: operator bg/pixel3 is absorbed into DSP bg/pixel3.
+DSP Report: Generating DSP bg/pixel3, operation Mode is (post resource management): A*B.
+DSP Report: operator bg/pixel3 is absorbed into DSP bg/pixel3.
+DSP Report: operator bg/pixel3 is absorbed into DSP bg/pixel3.
+DSP Report: Generating DSP bg/pixel3, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator bg/pixel3 is absorbed into DSP bg/pixel3.
+DSP Report: operator bg/pixel3 is absorbed into DSP bg/pixel3.
+DSP Report: Generating DSP bg/pixel3, operation Mode is (post resource management): A*B.
+DSP Report: operator bg/pixel3 is absorbed into DSP bg/pixel3.
+DSP Report: operator bg/pixel3 is absorbed into DSP bg/pixel3.
+DSP Report: Generating DSP bg/pixel3, operation Mode is (post resource management): A*B.
+DSP Report: operator bg/pixel3 is absorbed into DSP bg/pixel3.
+DSP Report: operator bg/pixel3 is absorbed into DSP bg/pixel3.
+DSP Report: Generating DSP bg/pixel3, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator bg/pixel3 is absorbed into DSP bg/pixel3.
+DSP Report: operator bg/pixel3 is absorbed into DSP bg/pixel3.
+DSP Report: Generating DSP bg/pixel3, operation Mode is (post resource management): A*B.
+DSP Report: operator bg/pixel3 is absorbed into DSP bg/pixel3.
+DSP Report: operator bg/pixel3 is absorbed into DSP bg/pixel3.
+DSP Report: Generating DSP bg/pixel3, operation Mode is (post resource management): A*B.
+DSP Report: operator bg/pixel3 is absorbed into DSP bg/pixel3.
+DSP Report: operator bg/pixel3 is absorbed into DSP bg/pixel3.
+DSP Report: Generating DSP bg/pixel3, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator bg/pixel3 is absorbed into DSP bg/pixel3.
+DSP Report: operator bg/pixel3 is absorbed into DSP bg/pixel3.
+DSP Report: Generating DSP bg/pixel3, operation Mode is (post resource management): A*B.
+DSP Report: operator bg/pixel3 is absorbed into DSP bg/pixel3.
+DSP Report: operator bg/pixel3 is absorbed into DSP bg/pixel3.
+DSP Report: Generating DSP bg/pixel3, operation Mode is (post resource management): A*B.
+DSP Report: operator bg/pixel3 is absorbed into DSP bg/pixel3.
+DSP Report: operator bg/pixel3 is absorbed into DSP bg/pixel3.
+DSP Report: Generating DSP bg/pixel3, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator bg/pixel3 is absorbed into DSP bg/pixel3.
+DSP Report: operator bg/pixel3 is absorbed into DSP bg/pixel3.
+DSP Report: Generating DSP bg/pixel3, operation Mode is (post resource management): A*B.
+DSP Report: operator bg/pixel3 is absorbed into DSP bg/pixel3.
+DSP Report: operator bg/pixel3 is absorbed into DSP bg/pixel3.
+DSP Report: Generating DSP bg/pixel3, operation Mode is (post resource management): A*B.
+DSP Report: operator bg/pixel3 is absorbed into DSP bg/pixel3.
+DSP Report: operator bg/pixel3 is absorbed into DSP bg/pixel3.
+DSP Report: Generating DSP bg/pixel3, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator bg/pixel3 is absorbed into DSP bg/pixel3.
+DSP Report: operator bg/pixel3 is absorbed into DSP bg/pixel3.
+DSP Report: Generating DSP bg/pixel3, operation Mode is (post resource management): A*B.
+DSP Report: operator bg/pixel3 is absorbed into DSP bg/pixel3.
+DSP Report: operator bg/pixel3 is absorbed into DSP bg/pixel3.
+DSP Report: Generating DSP bg/pixel3, operation Mode is (post resource management): A*B.
+DSP Report: operator bg/pixel3 is absorbed into DSP bg/pixel3.
+DSP Report: operator bg/pixel3 is absorbed into DSP bg/pixel3.
+DSP Report: Generating DSP bg/pixel3, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator bg/pixel3 is absorbed into DSP bg/pixel3.
+DSP Report: operator bg/pixel3 is absorbed into DSP bg/pixel3.
+DSP Report: Generating DSP pixel4, operation Mode is (post resource management): A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is (post resource management): A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is (post resource management): A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is (post resource management): A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is (post resource management): A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is (post resource management): A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is (post resource management): A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is (post resource management): A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel4, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: operator pixel4 is absorbed into DSP pixel4.
+DSP Report: Generating DSP pixel3, operation Mode is (post resource management): A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is (post resource management): A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is (post resource management): A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is (post resource management): A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is (post resource management): A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is (post resource management): A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is (post resource management): A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is (post resource management): A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is (post resource management): A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is (post resource management): A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is (post resource management): A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is (post resource management): A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: Generating DSP pixel3, operation Mode is (post resource management): (PCIN>>17)+A*B.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+DSP Report: operator pixel3 is absorbed into DSP pixel3.
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++----------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name           | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|connect4              | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|connect4              | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maplestory_background | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++----------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |Top_Student__GB0 |           1|     35844|
+|2     |Top_Student__GB1 |           1|       960|
+|3     |Top_Student__GB2 |           1|      6764|
+|4     |Top_Student__GB3 |           1|      5753|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:14 ; elapsed = 00:01:25 . Memory (MB): peak = 925.820 ; gain = 668.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:18 ; elapsed = 00:01:29 . Memory (MB): peak = 987.887 ; gain = 730.508
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |Top_Student__GB0 |           1|     35844|
+|2     |Top_Student__GB1 |           1|       960|
+|3     |Top_Student__GB2 |           1|      6764|
+|4     |Top_Student__GB3 |           1|      6047|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'u_pet_jump/A[0]' (FDRE) to 'u_pet_jump/jump_counter_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_pet_jump/A[4]' (FDRE) to 'u_pet_jump/jump_counter_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_pet_jump/A[2]' (FDRE) to 'u_pet_jump/jump_counter_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_pet_jump/A[3]' (FDRE) to 'u_pet_jump/jump_counter_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_pet_jump/A[1]' (FDRE) to 'u_pet_jump/jump_counter_reg[1]'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:28 ; elapsed = 00:01:40 . Memory (MB): peak = 1160.363 ; gain = 902.984
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop u_mouse/Inst_Ps2Interface/ps2_clk_h_reg is being inverted and renamed to u_mouse/Inst_Ps2Interface/ps2_clk_h_reg_inv.
+INFO: [Synth 8-5365] Flop u_mouse/Inst_Ps2Interface/ps2_data_h_reg is being inverted and renamed to u_mouse/Inst_Ps2Interface/ps2_data_h_reg_inv.
+INFO: [Synth 8-6064] Net n_0_16747 is driving 70 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_12920 is driving 74 big block pins (URAM, BRAM and DSP loads). Created 8 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_15026 is driving 66 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_12912 is driving 76 big block pins (URAM, BRAM and DSP loads). Created 8 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_14976 is driving 66 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_15016 is driving 76 big block pins (URAM, BRAM and DSP loads). Created 8 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_12903 is driving 70 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_14987 is driving 72 big block pins (URAM, BRAM and DSP loads). Created 8 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_13033 is driving 74 big block pins (URAM, BRAM and DSP loads). Created 8 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_14991 is driving 66 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_15018 is driving 70 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_12896 is driving 66 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_13450 is driving 70 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_15014 is driving 72 big block pins (URAM, BRAM and DSP loads). Created 8 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_16749 is driving 76 big block pins (URAM, BRAM and DSP loads). Created 8 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_15033 is driving 66 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_13431 is driving 76 big block pins (URAM, BRAM and DSP loads). Created 8 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_15012 is driving 66 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net \u_idle/background/pixel5 [16] is driving 72 big block pins (URAM, BRAM and DSP loads). Created 8 replicas of its driver. 
+INFO: [Synth 8-6064] Net \u_idle/u_dead_scene/bg/pixel5 [16] is driving 72 big block pins (URAM, BRAM and DSP loads). Created 8 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_1093 is driving 88 big block pins (URAM, BRAM and DSP loads). Created 9 replicas of its driver. 
+INFO: [Synth 8-6064] Net \u_connect4/oled_data4 [14] is driving 61 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:29 ; elapsed = 00:01:41 . Memory (MB): peak = 1160.363 ; gain = 902.984
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:29 ; elapsed = 00:01:41 . Memory (MB): peak = 1160.363 ; gain = 902.984
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:31 ; elapsed = 00:01:43 . Memory (MB): peak = 1160.363 ; gain = 902.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:31 ; elapsed = 00:01:43 . Memory (MB): peak = 1160.363 ; gain = 902.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:32 ; elapsed = 00:01:43 . Memory (MB): peak = 1160.363 ; gain = 902.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:32 ; elapsed = 00:01:43 . Memory (MB): peak = 1160.363 ; gain = 902.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name              | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Top_Student | u_flappy/rand_reg[10] | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+-----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     2|
+|2     |CARRY4  |  2587|
+|3     |DSP48E1 |    68|
+|4     |LUT1    |   586|
+|5     |LUT2    |  5533|
+|6     |LUT3    |  1750|
+|7     |LUT4    |  1733|
+|8     |LUT5    |  1677|
+|9     |LUT6    |  3164|
+|10    |MUXF7   |    36|
+|11    |SRL16E  |     1|
+|12    |FDE_1   |    64|
+|13    |FDRE    |  1308|
+|14    |FDSE    |   137|
+|15    |IBUF    |    22|
+|16    |IOBUF   |     2|
+|17    |OBUF    |    42|
+|18    |OBUFT   |     2|
++------+--------+------+
+
+Report Instance Areas: 
++------+----------------------+-------------------------+------+
+|      |Instance              |Module                   |Cells |
++------+----------------------+-------------------------+------+
+|1     |top                   |                         | 18714|
+|2     |  u_flap7seg          |sevenseg_flappy          |    27|
+|3     |  btn_det             |button_detector          |   335|
+|4     |  clkgen              |clock_6_25               |    11|
+|5     |  connect_btns        |connect_button_debouncer |   259|
+|6     |  flap_btns           |flappy_button_debouncer  |    76|
+|7     |  oled_game           |Oled_Display             |  3461|
+|8     |  oled_pet            |Oled_Display_0           |  1469|
+|9     |  petStats            |PetStatsSystem           |   616|
+|10    |  render_pet          |oled_renderer            |    17|
+|11    |    u_happiness_icon  |happiness_icon           |     3|
+|12    |  u_collect           |collect_logic            |   504|
+|13    |  u_connect4          |connect4                 |  8158|
+|14    |  u_cursor            |mouse_cursor             |     8|
+|15    |  u_exp               |exp_controller           |    65|
+|16    |  u_flappy            |flappy_logic             |   324|
+|17    |  u_game7seg          |sevenseg_game            |    37|
+|18    |  u_idle              |idle_scene               |  1254|
+|19    |    background        |maplestory_background    |   431|
+|20    |    u_dead_scene      |dead_sprite              |   535|
+|21    |      bg              |maplestory_background_2  |   535|
+|22    |  u_led_warn          |led_warning              |   186|
+|23    |  u_mouse             |MouseCtl                 |   685|
+|24    |    Inst_Ps2Interface |Ps2Interface             |   281|
+|25    |  u_pet_jump          |pet_jump_controller      |   277|
+|26    |  u_player_display    |seven_seg_connect4       |    25|
+|27    |  u_seg               |segment_display          |    36|
+|28    |  xp_calc_coin        |coin_xp                  |    12|
+|29    |  xp_calc_flappy      |coin_xp_1                |    12|
++------+----------------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:32 ; elapsed = 00:01:43 . Memory (MB): peak = 1160.363 ; gain = 902.984
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:21 ; elapsed = 00:01:35 . Memory (MB): peak = 1160.363 ; gain = 551.996
+Synthesis Optimization Complete : Time (s): cpu = 00:01:32 ; elapsed = 00:01:44 . Memory (MB): peak = 1160.363 ; gain = 902.984
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2779 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 66 instances were transformed.
+  FDE_1 => FDRE (inverted pins: C): 64 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+406 Infos, 54 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:35 ; elapsed = 00:01:48 . Memory (MB): peak = 1160.363 ; gain = 915.840
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/risha/Desktop/projects/Tamagoonchi/Tamagoonchi.runs/synth_1/Top_Student.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_Student_utilization_synth.rpt -pb Top_Student_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 1160.363 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Nov  8 16:42:51 2025...
