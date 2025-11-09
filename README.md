@@ -186,7 +186,13 @@ All sprites and logic are original student creations. Redistribution allowed for
 ---
 
 ## Demonstration  
-*(Add screenshots or demo video links here when available)*  
+<img width="289" height="147" alt="image" src="https://github.com/user-attachments/assets/cf4ced1c-7816-4220-8c16-4754619098b1" />
+<img width="185" height="123" alt="image" src="https://github.com/user-attachments/assets/4492d213-5c49-4e3a-8214-5a3fdb98726a" />
+<img width="132" height="94" alt="image" src="https://github.com/user-attachments/assets/7ae2f176-e5d9-4567-abfe-18c026188817" />
+<img width="133" height="94" alt="image" src="https://github.com/user-attachments/assets/1d6e7606-39eb-4156-888b-f8bfa1e4efea" />
+<img width="179" height="127" alt="image" src="https://github.com/user-attachments/assets/c4a6df40-0aec-41e0-a049-1762b1da3bbc" />
+
+
 
 ---
 
