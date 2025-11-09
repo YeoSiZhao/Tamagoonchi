@@ -190,9 +190,12 @@ All sprites and logic are original student creations. Redistribution allowed for
 <img width="185" height="123" alt="image" src="https://github.com/user-attachments/assets/4492d213-5c49-4e3a-8214-5a3fdb98726a" />
 <img width="132" height="94" alt="image" src="https://github.com/user-attachments/assets/7ae2f176-e5d9-4567-abfe-18c026188817" />
 <img width="133" height="94" alt="image" src="https://github.com/user-attachments/assets/1d6e7606-39eb-4156-888b-f8bfa1e4efea" />
+<img width="118" height="85" alt="image" src="https://github.com/user-attachments/assets/212e378d-235f-402a-92b5-ace65c4f2ec6" />
+<img width="124" height="85" alt="image" src="https://github.com/user-attachments/assets/75b677f3-dc4b-4e39-92d0-9fd9ccab5791" />
+<img width="171" height="121" alt="image" src="https://github.com/user-attachments/assets/e62af8c9-d9c2-49ff-b3cc-cd32627e71a1" />
 <img width="179" height="127" alt="image" src="https://github.com/user-attachments/assets/c4a6df40-0aec-41e0-a049-1762b1da3bbc" />
-
-
+<img width="210" height="103" alt="image" src="https://github.com/user-attachments/assets/f78f9e4a-b87f-441f-8ffd-15fff2755d21" />
+<img width="218" height="130" alt="image" src="https://github.com/user-attachments/assets/d095097a-0da1-4fb2-aba4-112f6bb9ac7f" />
 
 ---
 
